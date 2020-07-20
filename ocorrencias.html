@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocorrencias</title>
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="css/ocorrencias.css">
+
+    <!--Link Script-->
+    <script type="text/javascript" src="js/ocorrencias.js"></script>
+    <script src="js/logOcorrencias.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+</head>
+
+<body onload="carregaData(), startTime()">
+
+    <header>
+        <div>
+            <img src="img/icon_pg_ocorrencias.png" alt="logo Concierge Control">
+            <h1>Concierge Control - <strong class="fontBranca">Ocorrências</strong></h1>
+        </div>
+        <div>
+            <button type="button" onclick="window.close('ocorrencias.html')">Fechar</button>
+            <button type="button" onclick="">Relatorio</button>
+            <button class="nova" type="button" onclick="openNovaOcorrencia()">Nova Ocorrência</button>
+        </div>
+
+    </header>
+
+    <section>
+
+        <form action="" name="novaOcorrencia" id="novaOcorrencia">
+
+            <div class="idOcorrencia">
+               <p id="idOcorrencia">ID: 1001</p> 
+            </div>
+
+            <div class="dataHora">
+                <div id="data">data</div>
+                <div id="time">hora</div>
+            </div>
+
+            <div class="nomeAgente">
+                <select name="nomeAgente" id="nomeAgente">
+                    <option value="Nome do Agente">Nome do Agente</option>
+                    <option value="Agente1">Agente1</option>
+                    <option value="Agente2">Agente2</option>
+                    <option value="Agente3">Agente3</option>
+                </select>
+            </div>
+
+            <div class="tituloOcorrencia">
+                <input type="text" name="tituloOcorrencia" id="tituloOcorrencia" placeholder="Título da ocorrência">
+            </div>
+
+
+            <div class="radio">
+                <input type="radio" name="grau" id="urgente" onclick="img01()">
+                <label for="urgente">Urgente</label>
+
+                <input type="radio" name="grau" id="atencao" onclick="img02()">
+                <label for="atencao">Atenção</label>
+
+                <input type="radio" name="grau" id="normal" onclick="img03()" checked>
+                <label for="normal">Normal</label>
+
+                <div id="divIcone">
+                    <img id="icone" src="img/pouco_urgente.png" alt="ícone_pouco_urgente">
+                </div>
+            </div>
+
+            <div class="descricao">
+                <label for="descricao">Descrição:</label></br>
+                <textarea name="descricao" id="descricao" cols="30" rows="5"
+                    placeholder="Descreva a ocorrência..."></textarea>
+            </div>
+
+            <div class="resolucao">
+                <label for="resolucao">Resolução:</label></br>
+                <textarea name="resolucao" id="resolucao" cols="30" rows="5"
+                    placeholder="Resolução da Ocorrência..."></textarea>
+            </div>
+
+            <div class="imagens">
+                <div class="app">
+                    <img id="uploadPreview1"/>
+                    <input id="uploadImage1" type="file" name="myPhoto" onchange="PreviewImage1();" />
+                </div>
+
+                <div class="app">
+                    <img id="uploadPreview2"/>
+                    <input id="uploadImage2" type="file" name="myPhoto" onchange="PreviewImage2();" />
+                </div>
+
+                <div class="app">
+                    <img id="uploadPreview3"/>
+                    <input id="uploadImage3" type="file" name="myPhoto" onchange="PreviewImage3();" />
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="adcionar" type="reset" onclick="Adicionar()">Adicionar</button>
+                <button type="reset">Limpar</button>
+                <button type="reset" onclick="closedNovaOcorrencia()">Fechar</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section id="log">
+    
+        <table id="tblCadastro">         
+            <tbody>
+              
+            </tbody>
+        </table>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+div.ultimasOcorrencias{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
+}
+
+div.ultimasOcorrencias h1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+}
+
+div.ultimasOcorrencias div.ocorrencia{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 58, 58);
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content{
+    width: 90%;
+    height: auto;
+    margin: 10% 0;
+    padding: 5%;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content img{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 2% 0;
+    padding: 0;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content h3{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 5%  0 0 0;
+    padding: 0;
+    font-size: 15pt;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content button{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 3%;
+    color: rgb(255, 255, 255);
+    font: bold 15pt Arial;
+    border: 4px solid rgba(94, 94, 94, 0.555);
+    background-color: rgb(61, 61, 61);
+    cursor: pointer;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content button:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content p{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: rgb(121, 121, 121);
+    font-size: 15pt;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content div.description{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 13pt;
+    text-align: justify;
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content img#uploadPreview{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(68, 68, 68);
+}
+
+div.ultimasOcorrencias div.ocorrencia div.content img#uploadPreview2{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(68, 68, 68);
+}

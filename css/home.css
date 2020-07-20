@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div#mostrar iframe{
+
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 30, 30);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+div#container{
+    position: relative;
+    display: grid;
+    grid-gap: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    border-top: 10px solid rgb(131, 131, 131);
+    border-bottom: 10px solid rgb(131, 131, 131);
+}
+
+/*Configurações da aba Ferramentas*/
+div#ferramentas{
+    grid-column: 1;
+    width: 250px;
+    background-color: rgb(36, 36, 36);
+}
+
+div#ferramentas figure{
+    width: 60px;
+    height: auto;
+    margin: 0;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+div#ferramentas figure img{
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+div#ferramentas figure figcaption{
+    position: absolute;
+    top: 5%;
+    left: 85px;
+    width: 170px;
+    height: auto;
+    font-size: 12pt;
+}
+
+div#ferramentas figure figcaption p#funcaoAgente{
+    font-size: 10pt;
+}
+
+div#ferramentas button{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 220px;
+    height: 40px;
+    margin: 5% auto;
+    border-radius: 100px;
+    font-size: 13pt;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+div#ferramentas button:hover{
+    background-color: rgba(65, 65, 65, 0.685);
+}
+
+div#ferramentas button img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    height: auto;
+    left: 50px;
+    transition: 0.5s;
+}
+
+div#ferramentas button img.um{
+    display: none;
+    transition: 0.5s;
+}
+
+div#ferramentas button:hover img.um{
+    display: block;
+}
+
+div#ferramentas button:hover img.dois{
+    display: none;
+}
+
+
+
+div#ferramentas button p{
+    width: 150px;
+    height: auto;
+    margin: auto auto auto 35%;
+    text-align: left;
+    color: rgba(105, 105, 105, 0.507);
+    font: 600 13pt Arial;
+    transition: 0.5s;
+}
+
+div#ferramentas button:hover p{
+    color: rgb(253, 253, 253);
+}
+
+/*Configurações da aba Tela*/
+div#tela{
+    width: 750px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div#tela img#logo{
+    position: relative;
+    width: 25%;
+    height: auto;
+    margin: 5% auto auto auto;
+}
+
+div#tela h1#titulo{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 2% auto 5% auto;
+    font: bolder 35pt Arial;
+    color: rgb(56, 56, 56);
+}
+
+div#tela div#menu{
+    grid-column: 2;
+    display: grid;
+    grid-gap: 20px;
+    width: 580px;
+    margin: auto;
+}
+
+div#tela button{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 0;
+    border: 4px solid rgba(94, 94, 94, 0.555);
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+div#tela button:hover{
+    border: 4px solid rgba(65, 65, 65, 0.685);
+    background-color: rgb(48, 48, 48);
+}
+
+div#tela button img{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+div#tela button.btn1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div#tela button.btn2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+div#tela button.btn3{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+div#tela button.btn4{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+div#tela button.btn5{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+div#tela button.btn6{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+div#tela button.btn7{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div#tela button.btn8{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+div#tela button.btn9{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+div#tela button.btn10{
+    grid-column: 5;
+    grid-row: 2;
+}
+
+/*Configurações da aba Informativo*/
+div#informativo{
+    grid-column: 3;
+    width: 320px;
+    margin: 0 0 0 auto;
+    background-color: rgb(36, 35, 35);
+}
+
+div#informativo iframe{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-top: 5%;
+    height: 100vh;
+}

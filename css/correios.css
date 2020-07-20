@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+.fontBranca{
+    color: rgb(255, 255, 255);
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+}
+
+header div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto auto 2% auto;
+    padding-top: 2%;
+}
+
+header img{
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+
+header h1{
+    position: relative;
+    margin: auto;
+    font: bold 30pt Arial;
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+header button{
+    width: 150px;
+    height: 45px;
+    margin: auto;
+    font: normal 13pt Arial;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+}
+header button:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+header button.nova{
+    background-color: rgb(185, 83, 0);
+    width: 190px;
+}
+
+header button.nova:hover{
+    background-color: rgb(212, 97, 2);
+}
+
+section#novaEncomenda{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section table{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+section table th{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
+}
+
+section table tr{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-weight: 500;
+    background-color: rgb(40, 40, 40);
+}
+
+section table tr td{
+    position: relative;
+    height: auto;
+    padding: 5px;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+section table select{
+    padding: 2px;
+    font-size: 13pt;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+section table input{
+    padding: 2px;
+    font-size: 13pt;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+section div.button{
+    position: relative;
+    width: 85%;
+    height: auto;
+    margin: 10px auto;
+    text-align: left;
+}
+
+section div.button button{
+    width: 120px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px 10px 15px 0;
+    font: normal 13pt Arial;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+}
+
+section div.button button:hover{
+    background-color: rgb(78, 78, 78);
+}
+
+section#log{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+section#log table#tblCadastro{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+section#log table#tblCadastro input{
+    position: relative;
+    width: 180px;
+    height: auto;
+    margin: 0;
+    background-color: rgb(86, 110, 61);
+}
+
+section#log table#tblCadastro button{
+    display: none;
+}

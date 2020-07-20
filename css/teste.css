@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.fontBranca{
+    color: rgb(255, 255, 255);
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
+
+/*################################################################*/
+
+body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+}
+
+header h1{
+    position: relative;
+    width: 100%;
+    padding-top: 2%;
+    font: bold 30pt Arial;
+    color: rgb(71, 71, 71);
+    text-align: center;
+}
+
+header div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2%;
+}
+
+header img{
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+
+header button{
+    width: 150px;
+    height: 45px;
+    margin: auto auto auto -8%;
+    font: normal 13pt Arial;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+}
+header button:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+header button.nova{
+    background-color: rgb(185, 83, 0);
+    width: 190px;
+}
+
+header button.nova:hover{
+    background-color: rgb(212, 97, 2);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section form#novaOcorrencia{
+    position: relative;
+    display: none;
+    width: 70%;
+    grid-template-areas:
+    'idOcorrencia idOcorrencia' 
+    'dataHora nomeAgente'
+    'tituloOcorrencia radio'
+    'descricao descricao'
+    'resolucao resolucao'
+    'imagens imagens'
+    'button button';
+    grid-gap: 10px;
+    margin: 2% auto;
+    padding: 1%;
+}
+
+section form#novaOcorrencia div{
+    background-color: rgb(40, 40, 40);
+    font: normal 13pt Arial;
+    padding: 1%;
+}
+
+/*@@@@@@@@@@@@@@*/
+div.idOcorrencia{
+    grid-area: idOcorrencia;
+    display: flex;
+    align-items: center;
+}
+
+div.idOcorrencia p{
+    margin: auto 2% auto auto;
+    text-align: right;
+    font: bold 20pt Arial;
+    color: rgb(255, 255, 255);
+}
+
+/*@@@@@@@@@@@@@@*/
+div.dataHora{
+    grid-area: dataHora;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.dataHora div{
+    margin: auto 3% auto 3%;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+}
+
+/*@@@@@@@@@@@@@@*/
+div.nomeAgente{
+    grid-area: nomeAgente;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+div.nomeAgente select{
+    width: 90%;
+    padding: 1%;
+    font: normal 13pt Arial;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+/*@@@@@@@@@@@@@@*/
+div.tituloOcorrencia{
+    grid-area: tituloOcorrencia;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.tituloOcorrencia input{
+    width: 90%;
+    padding: 1%;
+    font: normal 13pt Arial;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+/*@@@@@@@@@@@@@@*/
+div.radio{
+    grid-area: radio;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.radio input{
+    margin-right: 1%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input#urgente[type='radio']:checked:after{
+    background-color: #ff0000;
+}
+
+input#atencao[type='radio']:checked:after{
+    background-color: #ffa500;
+}
+
+input#normal[type='radio']:checked:after{
+    background-color: #0ea300;
+}
+
+div.radio label{
+    padding-right: 5%;
+    color: rgb(255, 255, 255);
+}
+
+div.radio img{
+    width: 35px;
+    height: 35px;
+    padding-bottom: 1%;
+}
+
+/*@@@@@@@@@@@@@@*/
+div.descricao{
+    grid-area: descricao;
+    text-align: left;
+}
+
+div.descricao textarea{
+    width: 98%;
+    padding: 1%;
+    font: normal 13pt Arial;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+/*@@@@@@@@@@@@@@*/
+div.resolucao{
+    grid-area: resolucao;
+    text-align: left;
+}
+
+div.resolucao textarea{
+    width: 98%;
+    padding: 1%;
+    font: normal 13pt Arial;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 35);
+}
+
+div.button{
+    grid-area: button;
+    align-items: center;
+    text-align: left;
+}
+
+div.button button{
+    width: 150px;
+    height: 40px;
+    margin: auto 1%;
+    font: normal 13pt Arial;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
+}
+
+div.button button:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+div.button button.adcionar{
+    background-color: rgb(185, 83, 0);
+    width: 190px;
+}
+
+div.button button.adcionar:hover{
+    background-color: rgb(212, 97, 2);
+}
+
+div.imagens{
+    grid-area: imagens;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.imagens img{
+    width: 100%;
+    height: 150px;
+}
+
+div.imagens input{
+    width: 90%;
+    color: rgb(255, 255, 255);
+}
+
+/*###############################################*/
+aside{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+aside h1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font: bold 20pt Arial;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}

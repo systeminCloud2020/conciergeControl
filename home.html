@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge Control</title>
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!--Link Js-->
+    <script src="js/home.js"></script>
+
+    <!--Link's Externos-->
+
+</head>
+<body>
+    <section>
+
+        <div id="container">
+
+        <div id="ferramentas">
+            <figure>
+                <img src="img/michel_souza.png" alt="">
+                <figcaption>
+                    <p id="nomeAgente">Michel Souza Santana</p>
+                    <p id="funcaoAgente">Agente de Portaria</p>
+                </figcaption>
+            </figure>
+            
+            <button>
+                <img class="um" src="img/portariaMenu.png" alt="">
+                <img class="dois" src="img/portariaMenu2.png" alt="">
+                <p>Portaria</p>
+            </button>
+            
+            <button>
+                <img class="um" src="img/cadastroMenu.png" alt="">
+                <img class="dois" src="img/cadastroMenu2.png" alt="">
+                <p>Cadastro</p>
+            </button>
+
+            <button>
+                <img class="um" src="img/estoqueMenu.png" alt="">
+                <img class="dois" src="img/estoqueMenu2.png" alt="">
+                <p>Estoque</p>
+            </button>
+
+            <button>
+                <img class="um" src="img/relatorioMenu.png" alt="">
+                <img class="dois" src="img/relatorioMenu2.png" alt="">
+                <p>Relatórios</p>
+            </button>
+
+            <button>
+                <img class="um" src="img/sobreMenu.png" alt="">
+                <img class="dois" src="img/sobreMenu2.png" alt="">
+                <p>Sobre</p>
+            </button>
+
+            <button type="button" onclick="sair()">
+                <img class="um" src="img/exitMenu.png" alt="">
+                <img class="dois" src="img/exitMenu2.png" alt="">
+                <p>SAIR</p>
+            </button>
+
+        </div>
+
+        <div id="tela">
+
+            <img id="logo" src="img/logoCC.png" alt="">
+                <h1 id="titulo">Concierge control</h1>
+
+                <div id="menu">     
+
+            <button class="btn1" title="Home">
+                <img src="img/home.png" alt="Home">
+                    <p></p>
+            </button>
+
+            <button class="btn2" title="Regimento" onclick="openRegimento()">
+                <img src="img/icon_pg_regimento.png" alt="Regimento">
+                    <p></p>
+            </button>
+
+            <button class="btn3" title="Manual" onclick="openManual()">
+                <img src="img/icon_pg_manual.png" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn4" title="Ocorrências" onclick="openOcorrencias()">
+                <img src="img/icon_pg_ocorrencias.png" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn5" title="Visitas" onclick="openVisitas()">
+                <img src="img/visitas.svg" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn6" title="Correios" onclick="openCorreios()">
+                <img src="img/correio.svg" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn7" title="Reservas" onclick="openReservas()">
+                <img src="img/reservas.svg" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn8" title="Apartamentos" onclick="cadastroApartamento()">
+                <img src="img/aps.svg" alt="">
+                    <p></p>
+            </button>
+
+            <button class="btn9" title="Veículos" onclick="openVeiculos()">
+                <img src="img/veiculos.svg" alt="">
+                    <p></p>
+            </button>
+            
+            <button class="btn10" title="Multas" onclick="openMultas()">
+                <img src="img/multas.svg" alt="">
+                    <p></p>
+            </button>
+        </div>
+
+        
+
+    </div>
+        <div id="informativo">
+            <iframe src="ultimasOcorrencias.html" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+    <div id="mostrar"></div>
+
+    </section>
+</body>
+</html>
