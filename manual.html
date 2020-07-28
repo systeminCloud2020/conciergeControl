@@ -1,787 +1,875 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual</title>
+    <title>System | Manual</title>
+
+<!--Link Icon-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<!--Link Css-->
+<link rel="stylesheet" href="css/manual.css">
+
+<!--Link Script's-->
+<script src="js/home.js"></script>
+
+<!--Link Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <section>
-      
-<h1>Segurança em Condomínios</h1>
 
-<h2>SUMÁRIO</h2>
+<body onload="startTime(), carregaData()">
 
-<h3>Capítulo I – Como deve ser a segurança de um condomínio 05</h3>
-    <li>1.1. Barreiras físicas</li> 
-    <li>1.2. Iluminação 06</li>
-    <li>1.3. Sinalização 06</li>
-    <li>1.4. Sistemas de segurança eletrônicos em condomínios 06</li>
-    <li>1.4.1. Sistemas de alarmes 07</li>
-    <li>1.4.2. Cercas eletrificadas 07</li>
-    <li>1.4.3. CFTV- Circuito fechado de televisão 07</li>
-    <li>1.4.4. Controle de acesso informatizado 07</li>
-    <li>1.4.5. Sistemas de segurança monitorados 08</li>
+    <div id="container">
 
-<h3>Capítulo II – Procedimentos Preventivos Básicos de Segurança em
-Condomínio</h3>
+        <header>
 
-<li>2.1. Dicas de Segurança para os síndicos</li> 
-<li>2.1.1. Junto aos condôminos</li>
-<li>2.1.2. Junto aos funcionários</li>
-<li>2.1.3. Com relação à segurança do condomínio</li>
-<li>2.2. Dicas de Segurança aos condôminos</li>
-<li>2.2.1. Com relação à segurança do condomínio</li>
-<li>2.2.2. Com relação à segurança aos empregados domésticos</li>
-<li>2.2.3 Com relação à segurança do lar </li>
-<li>2.3. Dicas de Segurança aos funcionários</li>
-<li>2.3.1. Orientações Gerais</li>
-<li>2.3.2. Cuidados na Portaria</li>
-Capítulo III – Controle de Entrada e Saída de Pessoas pela Portaria 17
-3.1. Portaria 17
-3.1.1. Identificação de visitantes 17
-3.1.2. Identificação de prestadores de serviços 18
-3.1.3. Identificação de entregadores de mercadoria 19
-3.1.4. Controle de entrada e saída de prestadores de serviço por
-empresas de terceirização de mão-de-obra
-19
-3.1.5. Controle de entrada e saída de veículos 20
-3.1.6. Garagens 21
-3.1.7. Controle de entrada e saída de materiais 22
-Capítulo IV – Modo de Agir dos Ladrões 23
-4.1. Modus-Operandi 23
-4.2. Situações que levantam suspeitas 24
-Capítulo V – Medidas de Segurança em Caso de Emergência 27
-5.1. Casos de pessoas suspeitas rondando o condomínio 27
-5.2. Casos de tentativa de invasão em condomínio para fins de roubo
-ou furto
-28
-5.3. Em caso de roubo 29
-5.4. Após um roubo 29
-Capítulo VI – Segurança básica em elevadores 30
-Capítulo VII – Medidas para Prevenção ao uso de Drogas em
-Condomínios
-31
-Capítulo VIII – Telefones de emergência e úteis na cidade de São Paulo 32
-Capítulo IX – Bibliografia 33
-APRESENTAÇÃO 
-A Polícia Militar do Estado de São Paulo, voltada à defesa da cidadania, na
-busca da garantia dos direitos individuais e coletivos dos cidadãos, dentro da chamada
-prevenção primária, com a elaboração de materiais de divulgação e ciclos de palestras,
-indica condutas e medidas que cada cidadão deve adotar para elevar seu nível de
-proteção.
-Esta cartilha voltada a Segurança em Condomínios contém recomendações que
-visam a sua segurança, abrangendo dicas à respeito de condôminos, funcionários
-domésticos e dos condomínios, síndicos, prestadores de serviço e visitantes.
-Todas as dicas aqui contidas devem ser objetos de conversa e reflexão.
-Estar seguro também depende do conhecimento, de predisposição para adotar
-condutas adequadas de pró-atividade.
-Por outro lado, sua Polícia Militar continua vigilante, disposta e disponível a
-qualquer hora do dia ou da noite, em qualquer dia do ano, para proteger a todas as
-pessoas. Mais do que isso, desenvolve novas tecnologias, condutas e estratégias para
-elevar o nível de segurança da população, intensificando sua Visibilidade,
-Acessibilidade e Eficiência.
-Não devemos nos esquecer que: “segurança pública, dever do Estado,
-direitos e responsabilidade de todos”.
+            <div>
+                <img src="img/icon_pg_manual.png" alt="logo Concierge Control">
+                <h1>Concierge Control - <strong class="fontBranca">Manual</strong></h1>
+            </div>
+    
+            <div>
+            <button type="button" onclick="window.close()">Fechar</button>
+            <button type="button" onclick="">PDF</button>
+            <button class="nova" type="button" onclick="">Mais Informações</button>
+            </div>
+    
+            <div id="usuario">
+                <img src="img/michel_souza.png" alt="">
+                <h1 id="agente">Michel Souza Santana <p>Agente de Portaria</p></h1>
+                <p id="data">24/07/2020</p> 
+                <p id="hora">08:45</p>
+            </div>
+    
+        </header>
+    
+        <section>
+    
+            <h1>Segurança em Condomínios</h1>
+    
+            <h2>SUMÁRIO</h2>
+    
+            <h3>Capítulo I – Como deve ser a segurança de um condomínio 05</h3>
+            <li>1.1. Barreiras físicas</li>
+            <li>1.2. Iluminação 06</li>
+            <li>1.3. Sinalização 06</li>
+            <li>1.4. Sistemas de segurança eletrônicos em condomínios 06</li>
+            <li>1.4.1. Sistemas de alarmes 07</li>
+            <li>1.4.2. Cercas eletrificadas 07</li>
+            <li>1.4.3. CFTV- Circuito fechado de televisão 07</li>
+            <li>1.4.4. Controle de acesso informatizado 07</li>
+            <li>1.4.5. Sistemas de segurança monitorados 08</li>
+    
+            <h3>Capítulo II – Procedimentos Preventivos Básicos de Segurança em
+                Condomínio</h3>
+    
+            <li>2.1. Dicas de Segurança para os síndicos</li>
+            <li>2.1.1. Junto aos condôminos</li>
+            <li>2.1.2. Junto aos funcionários</li>
+            <li>2.1.3. Com relação à segurança do condomínio</li>
+            <li>2.2. Dicas de Segurança aos condôminos</li>
+            <li>2.2.1. Com relação à segurança do condomínio</li>
+            <li>2.2.2. Com relação à segurança aos empregados domésticos</li>
+            <li>2.2.3 Com relação à segurança do lar </li>
+            <li>2.3. Dicas de Segurança aos funcionários</li>
+            <li>2.3.1. Orientações Gerais</li>
+            <li>2.3.2. Cuidados na Portaria</li>
+    
+            <h3>Capítulo III – Controle de Entrada e Saída de Pessoas pela Portaria</h3>
+            <li>3.1. Portaria</li>
+            <li>3.1.1. Identificação de visitantes</li>
+            <li>3.1.2. Identificação de prestadores de serviços</li>
+            <li>3.1.3. Identificação de entregadores de mercadoria</li>
+            <li>3.1.4. Controle de entrada e saída de prestadores de serviço por
+                empresas de terceirização de mão-de-obra</li>
+            <li>3.1.5. Controle de entrada e saída de veículos</li>
+            <li>3.1.6. Garagens</li>
+            <li>3.1.7. Controle de entrada e saída de materiais</li>
+    
+            <h3>Capítulo IV – Modo de Agir dos Ladrões</h3>
+            <li>4.1. Modus-Operandi</li>
+            <li>4.2. Situações que levantam suspeitas</li>
+    
+            <h3>Capítulo V – Medidas de Segurança em Caso de Emergência</h3>
+            <li>5.1. Casos de pessoas suspeitas rondando o condomínio</li>
+            <li>5.2. Casos de tentativa de invasão em condomínio para fins de roubo
+                ou furto</li>
+            <li>5.3. Em caso de roubo</li>
+            <li>5.4. Após um roubo</li>
+    
+            <h3>Capítulo VI – Segurança básica em elevadores</h3>
+    
+            <h3>Capítulo VII – Medidas para Prevenção ao uso de Drogas em
+                Condomínios</h3>
+    
+            <h3>Capítulo VIII – Telefones de emergência e úteis na cidade de São Paulo</h3>
+    
+            <h3>Capítulo IX – Bibliografia</h3>
+    
+            <h2>APRESENTAÇÃO </h2>
+            <p>A Polícia Militar do Estado de São Paulo, voltada à defesa da cidadania, na
+                busca da garantia dos direitos individuais e coletivos dos cidadãos, dentro da chamada
+                prevenção primária, com a elaboração de materiais de divulgação e ciclos de palestras,
+                indica condutas e medidas que cada cidadão deve adotar para elevar seu nível de
+                proteção.</p>
+            <p>Esta cartilha voltada a Segurança em Condomínios contém recomendações que
+                visam a sua segurança, abrangendo dicas à respeito de condôminos, funcionários
+                domésticos e dos condomínios, síndicos, prestadores de serviço e visitantes.
+                Todas as dicas aqui contidas devem ser objetos de conversa e reflexão.
+                Estar seguro também depende do conhecimento, de predisposição para adotar
+                condutas adequadas de pró-atividade.</p>
+            <p>Por outro lado, sua Polícia Militar continua vigilante, disposta e disponível a
+                qualquer hora do dia ou da noite, em qualquer dia do ano, para proteger a todas as
+                pessoas. Mais do que isso, desenvolve novas tecnologias, condutas e estratégias para
+                elevar o nível de segurança da população, intensificando sua Visibilidade,
+                Acessibilidade e Eficiência.</p>
+            <p>Não devemos nos esquecer que: “segurança pública, dever do Estado,
+                direitos e responsabilidade de todos”.</p>
+    
+            <h3>Capítulo I - Como deve ser a segurança de um condomínio.</h3>
+            <p>Condomínio é definido como domínio exercido juntamente
+                com outrem, uma co-propriedade, podendo ser também um
+                conjunto residencial composto de edifícios e/ou casas,
+                geralmente cercado, com acesso controlado, e cujos
+                moradores dividem equipamentos comunitários, portanto,
+                todos têm o dever de mantê-lo e
+                protegê-lo a fim de preservar sua tranqüilidade, na busca
+                de melhor qualidade de vida.</p>
+            <p>Para que haja uma segurança
+                mais eficiente é necessário que
+                suas instalações físicas estejam cercadas e o máximo
+                possível fechadas. Diante disto os condomínios devem
+                possuir:</p>
+    
+            <h4>1.1. Barreiras físicas.</h4>
+            <p>São obstáculos naturais ou artificiais (estruturais)
+                que servem para impedir ou dificultar o acesso de
+                pessoas estranhas em locais delimitados ou proibidos,
+                e controlar os permitidos em um condomínio, além de
+                proteger os seus pontos estratégicos e vulneráveis.</p>
+            <p>Dentre os mais usuais podemos citar: as barreiras perimetrais junto às divisas tais
+                como vegetação, muros, cercas, concertinas, alambrados e
+                ofendículos; cancelas, guaritas nas portarias, portões com
+                eclusas, interfone, espelhos refletores (côncavos ou
+                convexos), grades, portas internas ou intermediárias,
+                passador de objetos, etc..</p>
+    
+            <h4>1.2. Iluminação. </h4>
+            <p>- É fundamental que as dependências do condomínio sejam bem
+                iluminadas, a fim de desestimular a ação de infratores da lei.
+                - Aconselha-se utilizar luminárias e holofotes, podendo
+                ser complementado por sensores de presença.</p>
+    
+            <h4>1.3. Sinalização.</h4>
+            <p>- A sinalização pode ser visual, através de
+                placas, sinais luminosos ou sonoros, ou ainda se
+                utilizando dispositivos sonoros eletrônicos ou
+                apitos, ou mesmo códigos e senhas
+                convencionadas entre os condôminos e funcionários.</p>
+    
+            <h4>1.4. Sistemas Eletrônicos de Segurança em Condomínios.</h4>
+            <p>- O sistema de segurança ideal é aquele que promove a
+                interação do homem com os equipamentos eletrônicos, a
+                fim de que a coligação entre ambos possa promover um
+                nível de proteção satisfatória. Atualmente no mercado,
+                existem os mais variados números e tipos de equipamentos
+                eletrônicos de segurança à disposição dos usuários,
+                portanto, deve-se adquirir aqueles que mais se adaptem às necessidades do
+                condomínio.</p>
+            <p>- Destacaremos, a seguir, os sistemas e equipamentos eletrônicos de segurança mais
+                utilizados em condomínios:</p>
+    
+            <h4>1.4.1. Sistemas de alarmes.</h4>
+            <p>- São equipamentos eletrônicos, sonoros ou não, que servem
+                para alertar sobre situações incomuns em residências ou condomínios, tais como
+                violação de procedimentos e locais, proteção contra roubos, furtos, alagamentos,
+                incêndios, etc.</p>
+            <p>- Esses sistemas se destacam com as seguintes características: alarme de intrusão;
+                sensores de porta e janela, botões de pânico, infravermelho passivo e ativo, etc.</p>
+    
+            <h4>1.4.2. Cercas eletrificadas.</h4>
+            <p>- É um sistema que está sendo bem aceito em condomínios, pois inibe possíveis
+                tentativas de intrusão pela ostensividade e pelo receio das descargas elétricas.</p>
+    
+            <h4>1.4.3. CFTV - Circuito Fechado de Televisão.</h4>
+            <p>- Através de câmeras com ou sem fio, instaladas em pontos
+                estratégicos da residência ou do condomínio, cujas imagens
+                devem ser gravadas, é possível se ter uma visualização de todo o
+                ambiente.</p>
+            <p>- A proteção ficará maior se as imagens também forem acessadas
+                pelos condôminos.</p>
+    
+            <h4>1.4.4. Controle de Acesso Informatizado.</h4>
+            <p>- O Sistema de Controle de Acesso tem como objetivo
+                principal efetuar o controle eletrônico do movimento de
+                pessoas - funcionários e visitantes - dentro de áreas
+                estratégicas dos condomínios. É bastante utilizado em condomínios comerciais.</p>
+    
+            <h4>1.4.5. Sistemas de Segurança Monitorados.</h4>
+            <p> - Sistemas monitorados oferecem serviço 24 horas, servem para reduzir riscos de
+                intrusão, incêndios e, combinando-se vários circuitos, podem ser empregados como
+                controle de acesso, CFTV (circuito fechado de TV) e até como segurança de
+                informação.</p>
+    
+            <h3>Capítulo II - Procedimentos Preventivos Básicos de Segurança em
+                Condomínios.</h3>
+            <p>Verificaremos a seguir alguns procedimentos usuais a serem seguidos tanto por
+                síndicos, moradores quanto pelos funcionários do condomínio, os quais devem ser
+                adotados como medidas de segurança, bem como contribuir na prevenção de roubos e
+                furtos.</p>
+    
+            <h4>2.1. Dicas de Segurança para os Síndicos.</h4>
+    
+            <h4>2.1.1. Junto aos condôminos:</h4>
+            <li>Desenvolva com o conselho de condôminos
+                normas firmes e transparentes sobre a segurança do
+                condomínio, discriminando, inclusive, punições;</li>
+            <li>Em reuniões condominiais aborde assuntos
+                relativos à segurança de seu condomínio;</li>
+            <li>Forme um conselho ou comissão específicos
+                para tratar do assunto segurança;</li>
+            <li>Incentive a participação de todos os moradores e funcionários quando for tratado
+                o tema segurança.</li>
+    
+            <h4>2.1.2. Junto aos funcionários:</h4>
+            <li>Na contratação de novos funcionários entreviste um
+                de cada vez, de preferência na portaria;</li>
+            <li>Obtenha o máximo de informações possíveis sobre o
+                candidato e solicite atestado de antecedentes e de
+                referência pessoal de todos os funcionários a serem
+                contratados;</li>
+            <li>Contrate funcionários que já possuam cursos de formação e treinamento para
+                poderem trabalhar no condomínio;</li>
+            <li>Promova e invista na reciclagem dos funcionários
+                através de cursos especializados;</li>
+            <li>Fiscalize a rotina de trabalho de funcionários e
+                zeladores, procurando
+                acompanhar de perto suas condutas assim como não atribuir missão que não lhes seja
+                pertinente;</li>
+            <li>Apresente e informe aos moradores quando da substituição ou admissão de um
+                funcionário, porém é aconselhável que se evite rotatividade;</li>
+            <li>O novo empregado ou o substituto não deve ficar sozinho até
+                conhecer todos os moradores e a rotina de trabalho do prédio;</li>
+            <li>Oriente sempre os funcionários, principalmente os
+                porteiros e garagistas, para que não saiam de seus postos de
+                trabalho, evitando deslocá-los para prestar serviços particulares.</li>
+    
+            <h4>2.1.3. Com relação à segurança do condomínio:</h4>
+            <li>Cadastre e mantenha atualizada a relação de todos
+                os moradores do condomínio, onde deverá constar
+                desde a placa de seu veículo até o nome de parentes
+                próximos para contato em caso de emergência;</li>
+            <li>Conheça a legislação sobre o condomínio e sua
+                administração;</li>
+            <li>Conheça profundamente o estatuto e as normas de
+                seu condomínio;</li>
+            <li>Procure acompanhar o andamento das obras
+                realizadas no condomínio;</li>
+            <li>Mantenha suficientemente iluminadas as entradas do condomínio, evitando o uso
+                de obras de arte, de decoração e de jardinagem que obstruam a ampla visão do local
+                ou criem pontos de penumbra à distância;</li>
+            <li>Atente para a segurança periférica do condomínio, tais como muros, grades,
+                cercas e alambrados, bem como de vias públicas de acesso ao condomínio, devendo
+                existir regulamentação para estacionamento de veículos, sinalização, iluminação, entre
+                outros;</li>
+            <li>Mantenha os equipamentos de segurança e de comunicação sempre em perfeito
+                estado de funcionamento; </li>
+            <li>Mantenha sempre na portaria livros de registro para controle do serviço, de
+                entrada e saída de pessoas, veículos e materiais;</li>
+            <li>Faça a manutenção periódica das portas de entrada e portões de garagem que
+                devem, em caso de quebra, ser imediatamente consertados;</li>
+            <li>Instale dispositivos eletrônicos de segurança, se possível, com monitoramento
+                por empresas especializadas e idôneas;</li>
+            <li>Caso for terceirizar os serviços como portaria, limpeza, manutenção e segurança
+                procure empresas idôneas e legalmente constituídas no mercado;</li>
+            <li>Atualize-se no que diz respeito a assuntos relativos à segurança, procurando o
+                que há de mais moderno no mercado para possível implantação no condomínio;</li>
+            <li>Contrate seguradora idônea para que se possa fazer o seguro da edificação com
+                apólices que, de preferência, garantam cobertura completa de sinistros, pois este é um
+                dos itens em que o síndico é responsabilizado, civil e criminalmente, em caso de algum
+                problema onde não se tenha uma cobertura ideal;</li>
+    
+            <h4>2.2. Dicas de Segurança aos Condôminos.</h4>
+            <h4>2.2.1. Com relação à segurança do condomínio:</h4>
+            <li>Participe ativamente das reuniões referentes à segurança,
+                inclusive fazendo parte das comissões ou conselhos de
+                segurança do seu condomínio;</li>
+            <li>Obedeça às normas de segurança preconizadas para o
+                seu condomínio;</li>
+            <li>Traga sempre informações sobre assuntos relativos à
+                segurança, pois suas sugestões são valiosas para o aperfeiçoamento e atualização da
+                proteção de todos;</li>
+            <li>Colabore com o síndico e demais moradores na formação de medidas que
+                garanta a eficácia de todo o sistema de controle a ser implantado;</li>
+            <li>Compreenda e elogie as ações preventivas dos funcionários, pois, além de
+                estarem cumprindo ordens, visam garantir a segurança do condomínio, mesmo quando
+                estas atitudes representem algum transtorno para si ou para suas visitas; </li>
+            <li>Conscientize seus parentes e empregados
+                sobre a importância da integração de todos no
+                sistema de segurança adotado pelo condomínio;</li>
+            <li>Não se exponha desnecessariamente;
+                somente desça à portaria quando o assunto lhe
+                for pertinente;</li>
+            <li>Avise a portaria para que receba suas
+                encomendas, enviando-lhes o cheque ou dinheiro para o pagamento, se for o caso;</li>
+            <li>Evite comentar sobre sua vida íntima, seus bens, patrimônio e ganhos na frente
+                de estranhos ou até mesmo de funcionários;</li>
+            <li>Criar um gesto ou até mesmo uma “careta”, comum a todos os condôminos, a ser
+                adotado quando forem atender à porta através do olho mágico, para avisar os demais
+                moradores que se encontra naquele momento sob ameaça de assaltantes;</li>
+            <li>Ao entrar ou sair do prédio, observe se há pessoas nas proximidades. Caso
+                perceba alguma movimentação estranha, não entre ou saia, ligue imediatamente para
+                a polícia, avise seus familiares e o porteiro;</li>
+            <li>Aguarde para entrar ou sair se o porteiro estiver
+                identificando um estranho;</li>
+            <li>Antes de entrar na garagem, verifique se há algum
+                veículo atrás do seu, se está em situação suspeita ou se
+                seus ocupantes são moradores do condomínio. Ao sair,
+                também observe se há alguma situação de suspeição;</li>
+            <li>Se o portão da garagem funciona através de
+                acionamento automático, aguarde para que a porta esteja totalmente fechada antes de
+                se dirigir para sua vaga;</li>
+            <li>Ao estacionar seu veículo na garagem ou na rua, nunca o deixe aberto e nem
+                com objetos de valor à vista, ligue sempre o alarme do seu veículo;</li>
+            <li>Procure conhecer os hábitos de seus vizinhos e se relacionar bem com eles.
+                2.2.2. Com relação aos empregados domésticos: </li>
+            <li>Na contratação de novos funcionários entreviste um
+                de cada vez, de preferência na portaria. Nunca os leve ao
+                apartamento;</li>
+            <li>Obtenha o máximo de informações possíveis sobre o
+                candidato e solicite atestado de antecedentes e referências
+                pessoais de todos os funcionários a serem contratados;</li>
+            <li>Oriente seus funcionários para que nunca comentem
+                sobre seus hábitos;</li>
+            <li>Acautele-se com funcionários que aceitam trabalhar ganhando pouco e passam
+                imagem de muito eficientes. Observe-os atentamente, principalmente em relação à
+                mudanças de comportamento;</li>
+    
+            <h4>2.2.3. Com relação à segurança do lar:</h4>
+            <li>Evite deixar as chaves da sua residência, bem como
+                seus objetos pessoais na portaria do condomínio, se for o
+                caso deixe-os com um vizinho de confiança;</li>
+            <li>Em casos de perda das chaves, troque imediatamente
+                as fechaduras ou cilindros;</li>
+            <li>Ao mandar fazer cópias das chaves presencie
+                pessoalmente sua reprodução;</li>
+            <li>Evite deixar recados na portaria ou bilhetes afixados
+                na porta da residência quando for passar um final de
+                semana fora;</li>
+            <li>Em caso de viagem mais prolongada, providencie uma pessoa de sua inteira
+                confiança para tomar conta da residência ou mesmo peça ajuda a um vizinho para
+                olhar seu apartamento;</li>
+            <li>Caso resida nos dois primeiros andares do prédio, proteja as áreas de acesso
+                com grades reforçadas;</li>
+            <li>Instale olho mágico de 180° nas portas que dão acesso às partes externas de
+                sua residência;</li>
+            <li>Utilize nas portas trincos e trancas complementares, dando preferência a
+                fechaduras quádruplas;</li>
+            <li>Atente também, para as janelas, complementando as fechaduras com trancas
+                especiais;</li>
+            <li>Antes de se deitar, à noite, revise o fechamento de portas e janelas;</li>
+            <li>Instale alarmes com dispositivos sonoros nas principais entradas da residência;</li>
+            <li>Mantenha sempre em perfeito funcionamento os meios de comunicação, tais
+                como telefones e interfones;</li>
+            <li>Atente para atos e condições inseguras a fim de evitar acidentes dentro de seu
+                lar.</li>
+    
+            <h4>2.3. Dicas de segurança aos funcionários.</h4>
+            <h4>2.3.1. Orientações gerais:</h4>
+            <li>Participe do sistema de segurança do condomínio;</li>
+            <li>Obedeça às ordens e normas relativas à segurança;</li>
+            <li>Preencha corretamente os relatórios existentes, quer
+                seja de serviço ou das condições de segurança do
+                condomínio;</li>
+            <li>Traga sempre informações e sugestões para a melhoria de seu serviço e das
+                condições de segurança do condomínio;</li>
+            <li>Fique sempre atento para o que acontece no prédio, observando se há alteração
+                na rotina do condomínio;</li>
+            <li>Não converse com estranhos, e, em hipótese alguma, forneça informações sobre
+                o condomínio e os moradores;</li>
+            <li>Não se impressione com boa aparência e suposta
+                autoridade. Observe se o traje combina com a aparência
+                e também com o modo da pessoa falar;</li>
+            <li>Observe bem as pessoas, fique atento para algum
+                volume suspeito no corpo do indivíduo, principalmente na situação de porte de arma;</li>
+            <li>Redobre a atenção nos horários de maior movimento, que normalmente são das
+                06h às 09h, das 11h às 14h e das 17h às 20h, tomando especial cuidado no período da
+                manhã;</li>
+            <li>Quando houver imóvel a ser locado ou vendido,
+                exija o aviso antecipado sobre a visita, além da
+                presença do proprietário ou de corretor de imóvel
+                devidamente registrado no Conselho Regional de
+                Corretores de Imóveis (CRECI) e que esteja vinculado a
+                uma corretora ou administradora credenciada;</li>
+            <li>Suspeite de funcionários públicos, inclusive policiais, em carros particulares,
+                querendo entrar no prédio (exceto em situações emergenciais), sem a devida
+                identificação. Não abra a porta sem autorização, chame o síndico e exija mandado
+                judicial;</li>
+            <li>Suspeite também de pessoa se dizendo oficial de justiça, que queira forçar a
+                entrada no condomínio sem querer apresentar identificação e nem o mandado judicial;</li>
+            <li>Inteire-se das diferentes artimanhas utilizadas pelos infratores da lei;</li>
+            <li>Sempre consulte o morador sobre a viabilidade de autorização de entrada de
+                visitantes ao condomínio;</li>
+            <li>Nos horários de limpeza e recolhimento de lixo, mantenha as entradas do
+                condomínio fechadas;</li>
+            <li>Não deixe crianças desacompanhadas ou que estiver em companhia de pessoas
+                estranhas saírem do condomínio;</li>
+            <li>Leve todos os problemas atinentes ao serviço ao morador responsável pela área
+                ou ao síndico.</li>
+    
+            <h4>2.3.2. Cuidados na portaria.</h4>
+            <li>A portaria deverá estar sempre fechada, e
+                localizada dentro dos limites do condomínio, não
+                devendo avançar em área externa à grade ou muro de
+                proteção;</li>
+            <li>Permaneça sempre em seu posto de trabalho,
+                evitando deslocar-se para prestar serviços particulares
+                a condôminos, mesmo que seja na área do condomínio;</li>
+            <li>Nunca abandone seu posto de trabalho para atender estranhos no portão ou
+                através das grades, dando condições para ser imobilizado por arma de fogo;</li>
+            <li>Não permita que pessoas estranhas
+                adentrem ao portão para conversar com o porteiro
+                ou outro funcionário pela janela de sua guarita,
+                mesmo que seja para
+                completar a identificação
+                ou motivo de visita;</li>
+            <li>Durante a noite, mantenha o interior da portaria com
+                pouca luz. O exterior deve estar bem iluminado;</li>
+            <li>Tenha sempre à mão a lista de telefones úteis.</li>
+            <li>Se houver sistema de CFTV em seu prédio, é importante dar atenção aos
+                monitores, porém não se distraia a ponto de prejudicar o trabalho;</li>
+            <li>Não assista TV na portaria durante o serviço, assim como evite uso de rádio em
+                volume alto;</li>
+            <li>Domine o manejo dos equipamentos que estão sob sua responsabilidade.
+                Capítulo III - Controle de Entrada e Saída de Pessoas pela Portaria.
+                3.1. Portaria.</li>
+            <p>- É o principal ponto de segurança do condomínio, pois por ela circulam todas as
+                pessoas, materiais e veículos que entram ou saem deste, de forma regular.</p>
+            <p>- O porteiro/vigia tem por função normal controlar essa circulação através da
+                identificação de pessoas, funcionários do condomínio, empregados de condôminos,
+                visitantes, entregadores de serviço, entrada e saída de veículos e conferência de
+                mercadorias deixadas na portaria.</p>
+            <p>- Para isto, cada condomínio deve adotar suas normas de procedimento a fim de que
+                atenda às suas peculiaridades, propiciando as condições mínimas de trabalho aos
+                funcionários da portaria, principalmente no tocante a segurança, equipamentos
+                adequados ao serviço, iluminação, e outros de acordo com as características do
+                condomínio.</p>
+            <p>- Verificaremos alguns itens a serem seguidos na atuação em Portarias, porém tais
+                regras podem ser acrescidas por tantas outras quanto forem necessárias:</p>
+    
+            <h4>3.1.1. Identificação de visitantes:</h4>
+            <li>Faça a identificação visual da pessoa;</li>
+            <li>Cumprimente-a (bom-dia, boa-tarde, boa-noite);</li>
+            <li>Solicite, com educação, um documento com foto para
+                conferir seus dados completos;</li>
+            <li>Mantenha os portões fechados;</li>
+            <li>Os visitantes devem aguardar do lado de fora do condomínio
+                ou em um local reservado para isto;</li>
+            <li>Entre em contato com o morador informando-o sobre a presença do visitante e da
+                conveniência de sua entrada ou não;</li>
+            <li>Em caso de dúvida por parte do condômino, solicite sua presença junto à portaria a
+                fim de identificar o visitante pessoalmente ou através do sistema de CFTV ligado ao
+                apartamento;</li>
+            <li>Sendo autorizada sua entrada, anote os dados da
+                pessoa, em livro próprio, e devolva seu documento,
+                agradecendo;</li>
+            <li>Entregue à pessoa o crachá de identificação ou
+                autorização, caso seja norma do condomínio;</li>
+            <li>Indique ou peça que algum funcionário do condomínio conduza a pessoa ao local ou
+                residência do condômino;</li>
+            <li>Na saída, recolha o crachá ou a autorização com a devida assinatura do visitado.</li>
+    
+            <h4>3.1.2. Identificação de prestadores de serviços:</h4>
+            <li>Faça a identificação visual da pessoa;</li>
+            <li>Cumprimente-a (bom-dia, boa-tarde, boanoite);</li>
+            <li>Peça, com educação, um documento com foto
+                para conferir seus dados completos, solicite,
+                também, seu documento funcional ou crachá de
+                identificação da empresa em que trabalha;</li>
+            <li>Mantenha os portões fechados;</li>
+            <li>A pessoa deverá aguardar do lado de fora do condomínio ou em local apropriado;</li>
+            <li>Contate o condômino para verificar se o prestador de serviço é esperado;</li>
+            <li>Caso haja dúvida sobre a presença do prestador de serviço, solicite a presença do
+                condômino até a portaria para identificá-lo pessoalmente ou através do sistema de
+                CFTV ligado ao apartamento;</li>
+            <li>Sendo autorizada a entrada da pessoa, anote seus dados em livro próprio,
+                registrando o horário de entrada e saída, devolva-lhe os documentos, agradecendo;</li>
+            <li>Entregue o crachá de identificação de prestador de serviço ou uma autorização de
+                entrada;</li>
+            <li>Peça que algum funcionário do condomínio o acompanhe
+                até o local do serviço ou à residência do condômino;</li>
+            <li>Na saída, recolha o crachá ou a autorização devidamente
+                assinada pelo condômino;</li>
+            <li>O condomínio deverá ter um horário predeterminado
+                para a autorização de entrada de prestadores de serviço,
+                evitando-se os horários noturnos.</li>
+    
+            <h4>3.1.3. Identificação de entregadores de mercadoria
+                (encomendas, pizzas, flores, presentes ou outros objetos):</h4>
+            <li>Faça a identificação visual da pessoa;</li>
+            <li>Cumprimente-a (bom-dia, boa-tarde, boa-noite);</li>
+            <li>Mantenha os portões fechados;</li>
+            <li>A pessoa deverá aguardar do lado de fora do condomínio ou em local reservado para
+                isto, devendo ser tratada à distância, pois é prática comum infratores da lei inventarem
+                uma entrega fictícia;</li>
+            <li>Avise o condômino, solicitando sua presença ou de algum funcionário seu na portaria
+                a fim de pegar a encomenda;</li>
+            <li>Jamais permita que o entregador leve pessoalmente a encomenda até a residência;</li>
+            <li>Caso o material venha acompanhado de Nota Fiscal, receba e assine o recibo;</li>
+            <li>Na ausência do condômino, receba e guarde para posteriormente ser retirada pelo
+                morador ou entregue por um funcionário.</li>
+    
+            <h4>3.1.4. Controle de entrada e saída de prestadores de serviço por empresas de
+                terceirização de mão-de-obra:</h4>
+            <li>Solicite ao funcionário o seu crachá ou documento de identificação da empresa,
+                conferindo com a relação que possua na portaria;</li>
+            <li>Entregue o crachá de identificação do condomínio como prestador de serviços;</li>
+            <li>Anote seus dados em livro próprio, registrando o horário de entrada e saída;</li>
+            <li>Na saída, recolha o crachá de identificação.</li>
+    
+            <h4>3.1.5. Controle de entrada e saída de veículos:</h4>
+            <li>A identificação de todos os veículos que queiram entrar
+                no condomínio é obrigação e dever do porteiro, vigia,
+                vigilante, garagista ou zelador. Portanto, devem seguir as
+                normas abaixo relacionadas: </li>
+            <li>Jamais abra os portões sem antes ter certeza de que o veículo pertence a morador e
+                que este se encontra em seu interior (ver quem é para depois abrir o portão);</li>
+            <li>Faça inspeção visual na pessoa e no veículo;</li>
+            <li>Nunca abra o portão da garagem a veículos e pessoas estranhas ao condomínio,
+                inclusive não se deixe impressionar com veículos novos (de luxo) ou importados que
+                apontem em direção da garagem;</li>
+            <li>Antes de abrir o portão da garagem, verifique se não há risco de intrusão de alguma
+                pessoa estranha junto com o veículo;</li>
+            <li>Preste atenção quando o motorista estiver acompanhado por pessoas estranhas ou
+                em atitudes suspeitas. Observe possíveis sinais de alerta por parte do motorista, pois o
+                condômino poderá estar sob ameaça de assaltante;</li>
+            <li>Nenhum veículo deve sair do condomínio quando o proprietário não estiver junto ou
+                sem sua autorização expressa, principalmente quando se tratar de menor ou
+                desconhecidos.</li>
+    
+            <p>- Em casos de veículos que venham entregar encomendas no interior do condomínio
+                ou mudanças, além do descrito anteriormente deve-se:</p>
+    
+            <li>Solicitar documentação do motorista e dos ajudantes, quando houver, a fim de anotála em livro próprio;</li>
+            <li>Em mudanças ou transporte de qualquer mobiliário deve-se entrar em contato com o
+                condômino a fim de que seja certificado se realmente há sua autorização e que todo o
+                material retirado é o determinado;</li>
+            <li>Em mudanças, quando o condômino estiver ausente, somente deixe que o veículo
+                seja carregado quando houver autorização por escrito por parte do morador;</li>
+            <li>O zelador ou outro funcionário determinado pelo síndico deverá acompanhar
+                qualquer tipo de carga ou descarga no interior do condomínio;</li>
+            <li>Verificar se todos que entraram com o veículo estão nele saindo e/ou se alguém foi
+                autorizado a permanecer no condomínio;</li>
+            <li>Caso perceba alguma irregularidade, retenha o veículo e acione seu superior
+                imediato ou, se for o caso, a Polícia;</li>
+            <li>Para a realização de mudanças deve ser seguido o estabelecido na convenção do
+                condomínio, sendo viável que esta não ocorra no período noturno. </li>
+    
+            <h4>3.1.6. Garagens:</h4>
+            <p>- Sem dúvida alguma, em se falando de proteção, a
+                garagem é um dos pontos mais vulneráveis dos
+                conjuntos residenciais ou de maior indisciplina e até
+                descaso por parte dos moradores, pois estes não
+                tomam as devidas cautelas ao entrar ou sair do
+                condomínio, ou então deixam de seguir as orientações
+                preconizadas em Assembléias de Condôminos.</p>
+            <p>- Por este motivo, é importante construir eclusas, ou seja, dois portões acionados
+                eletronicamente que confinem o veículo entre si, de modo que uma delas se abra
+                somente quando a outra estiver fechada, podendo ser acionadas pela portaria ou pelo
+                próprio condômino, evitando-se, assim, a entrada do meliante “carona”, isto é, aquele
+                que espera o carro entrar e aproveita a porta ainda aberta para adentrar ao condomínio
+                e praticar, posteriormente, seus atos criminosos.</p>
+            <p>- Aliado a isto, deve-se utilizar um sistema que muito se tem destacado pela sua
+                praticidade, é aquele em que cada morador tem um controle remoto acionando o
+                portão automático para entrar e sair da garagem sem a ação da portaria. Caso não
+                seja possível adotar esses sistemas, torna-se necessária a contratação de garagista
+                para controlar o acesso de veículos. Além disso, toda garagem deve possuir espelhos
+                convexos que facilitem a visualização de porteiros ou garagistas.</p>
+    
+            <h4>3.1.7. Controle de entrada e saída de materiais:</h4>
+            <p>- Quando o material for deixado na portaria, o funcionário
+                deverá tomar a seguinte atitude:</p>
+            <li>Fazer inspeção visual na pessoa e no material;</li>
+            <li>Verificar seu conteúdo sem, no entanto, abri-lo;</li>
+            <li>Anotar os dados do portador, do remetente e residência
+                do destinatário;</li>
+            <li>Anotar a data e a hora da entrega em livro próprio;</li>
+            <li>Conferir o material juntamente com a Nota Fiscal;</li>
+            <li>Não autorizar a saída de pessoas estranhas ao condomínio que estejam de posse de
+                objetos ou pacotes sem obter prévia autorização do condômino;</li>
+            <li>Não entregar chaves, objetos ou pacotes de moradores a pessoas estranhas sem
+                autorização expressa;</li>
+            <li>Revistar bolsas e sacolas de funcionários e prestadores de serviço, quando o
+                Estatuto ou Regimento Interno do Condomínio assim determinar.</li>
+    
+            <h4>Capítulo IV - Modo de Agir dos Ladrões.</h4>
+            <p>- Os infratores da lei atualmente têm utilizado os mais
+                diversos ardis para entrar nos condomínios com a finalidade
+                de cometerem algum tipo de delito contra seus moradores.</p>
+            <p>- Os fatos mostram que em 90% das ocorrências de roubo
+                em condomínios, os assaltantes entraram pela porta da
+                frente do prédio, ou seja, de alguma forma burlaram ou
+                violaram o sistema de segurança montado, ludibriando principalmente o porteiro de
+                serviço. </p>
+    
+            <h4>4.1. Modus Operandi (forma de agir).</h4>
+            <li>Saltando os muros e cercas do pátio em locais vulneráveis e fora da visibilidade do
+                porteiro ou vigilantes;</li>
+            <li>Pulando os muros e cercas;</li>
+            <li>Como “passageiros” de veículos de entrega que entram na garagem;</li>
+            <li>Pelo portão de serviço travestido de prestadores de serviço da Telesp, Sabesp,
+                Comgás, Eletropaulo, eletricistas, encanadores, entregadores de pizza e encomendas,
+                etc.;</li>
+            <li>Iludindo o porteiro de forma que este permita que o ladrão entre pelo portão principal
+                ou mesmo pelo portão da garagem;</li>
+            <li>Passando-se por comprador de imóvel, ludibriando o porteiro, sob a alegação de ter
+                que olhar, a fim de fazer uma avaliação;</li>
+            <li>Estando acompanhado de uma mulher bonita a fim de distrair a atenção do porteiro
+                para persuadi-lo a abrir o portão;</li>
+            <li>Pela porta principal ou portão da garagem, acompanhando um morador que entra a
+                pé ou dirigindo um veículo, ameaçado e subjugado pelo assaltante;</li>
+            <li>Tocando a buzina ou piscando os faróis do veículo defronte o portão da garagem
+                para que o porteiro o abra inocentemente;</li>
+            <li>Pelo portão da garagem quando este permanece aberto durante a entrada ou saída
+                de veículos;</li>
+            <li>Pelo uso de artimanha junto ao porteiro, dizendo a este que veio buscar uma TV,
+                carro, sofá, etc., do morador, exibindo, até mesmo, bilhete e telefone do condômino
+                para verificação;</li>
+            <li>Como morador do próprio condomínio (normalmente adolescente) ou mesmo como
+                empregado;</li>
+            <li>Passando-se por amigo de moradores ou ainda dizendo-se vizinho a fim de
+                acompanhar o condômino e enganar o porteiro;</li>
+            <li>Apresentando-se como entregador de cesta de café da manhã, flores, encomendas
+                em geral, bem como entregador de jornais e revistas durante a noite;</li>
+            <li>Apresentando-se como Funcionários Públicos, querendo forçar a entrada no
+                condomínio sem se identificar;</li>
+            <li>Por ação violenta de surpresa, com quadrilhas especializadas em tais delitos.</li>
+    
+            <h4>4.2. Situações que levantam suspeitas:</h4>
+            <p>- Verificaremos, a seguir, situações em que as pessoas podem estar em atitude
+                suspeita e que demandam observação minuciosa por parte de todos os integrantes do
+                condomínio:</p>
+            <li>Pessoas paradas estranhamente na rua, lendo jornal ou
+                andando vagarosamente próximas ao condomínio,
+                observando-o atentamente;</li>
+            <li>Indivíduos que permaneçam parados em ponto de ônibus,
+                sem tomar nenhum deles;</li>
+            <li>Pessoas que demonstrem nervosismo sem motivo
+                aparente;</li>
+            <li>Mendigos ou vendedores-ambulantes estranhos ao local;</li>
+            <li>Aparentes funcionários da Companhia Telefônica, de Água e Esgoto, de Energia
+                Elétrica, de entrega de Gás, etc., que simulam consertos a serem executados;</li>
+            <li>Indivíduos fazendo aparentes consertos demorados em automóveis próximos à
+                entrada do condomínio;</li>
+            <li>Pessoa que preste muita atenção ao condomínio, observando principalmente sua
+                portaria ou garagem;</li>
+            <li>Pessoas que estejam de carro, motocicleta ou bicicleta, sempre com os mesmos
+                ocupantes, que passem lentamente, por várias vezes, em frente do condomínio como
+                se estivessem observando a rotina da portaria e da garagem. Nestes casos procure
+                anotar os dados do veículo (placa, modelo, cor, etc.) e as características das pessoas
+                (sexo, altura, cor, roupas, etc), transmitindo-os à polícia;</li>
+            <li>Indivíduos que demonstrem muito interesse pelo sistema de segurança do
+                condomínio;</li>
+            <li>Pessoas andando juntas, vagarosamente, sem conversar;</li>
+            <li></li>
+            <li>Pessoas usando possíveis disfarces, tais como peruca, barba, bigode, óculos
+                escuros em dia sem sol;</li>
+            <li>Técnicos não solicitados (telefone, eletricistas, gás, eletrodomésticos, serviços
+                gerais, etc.) que insistam em entrar no condomínio ou que solicitem consertos nas
+                residências;</li>
+            <li>Pessoas muito bem vestidas e extremamente simpáticas que se fazem passar por
+                compradores de imóveis que, procurando ganhar a confiança dos porteiros,
+                conseguem entrar nas dependências do condomínio, a fim de consumar seus delitos;</li>
+            <li>Vendedores, pedintes, pregadores religiosos que insistam em entrar no condomínio
+                ou que solicitem a presença de moradores à portaria;</li>
+            <li>Pessoas que, durante a conversa, escondam as mãos em bolsos de blusas ou de
+                jaquetas, onde possam estar escondendo armas.</li>
+            <li>Indivíduos que observam um veículo (quando estacionado) e/ou pareçam aguardar a
+                chegada do dono para apanhá-lo;</li>
+            <li>Motoristas ou motoqueiros que se aproximem exageradamente de moradores
+                quando estiverem adentrando ao condomínio;</li>
+            <li>Pessoas em grupo ou mesmo isoladas que procurem aproximação física de
+                moradores nas proximidades do condomínio;</li>
+            <li>Veículos estacionados nas imediações do condomínio por muito tempo, com pessoas
+                em seu interior, principalmente à noite;</li>
+            <li>Veículo estacionado nas proximidades do condomínio por mais de 24 horas,
+                parecendo haver sido abandonado no local;</li>
+            <li>Telefonemas de pessoas estranhas que solicitam informações confidenciais e
+                pessoais de moradores ou de funcionários do condomínio;</li>
+            <li>Desaparecimento de correspondências da caixa do correio do condomínio;</li>
+            <li>Pessoas que resistam quando lhes é solicitado algum documento de identidade na
+                portaria do condomínio;</li>
+            <li>Indivíduos muito bem trajados, que se fazem passar por pessoas de classe social
+                elevada, intitulando-se doutores ou mesmo autoridades, forçando sua entrada no
+                condomínio, intimidando os porteiros;</li>
+            <li>Pessoas na rua simulando acidentes e que pedem socorro, solicitando, inclusive,
+                para entrar no condomínio, a fim de ligar para os órgãos de emergência, o que pode
+                ser uma armadilha ou cilada;</li>
+            <li>Entregadores de pizzas, flores, refeições, etc., e mesmo de encomendas;</li>
+    
+            <h4>Capítulo V - Medidas de Segurança em Caso de Emergência.</h4>
+            <p>Existem situações em que se torna necessário adotar determinados procedimentos em
+                casos emergenciais. Para tanto, moradores devem estar preparados para enfrentar
+                fatores adversos que venham atingir seu condomínio, sendo os mais comuns os
+                seguintes:</p>
+    
+            <h4>5.1. Casos de pessoas em atitudes suspeitas rondando o
+                condomínio:</h4>
+            <li>Esteja atento a toda e qualquer movimentação estranha nos arredores do
+                condomínio;</li>
+            <li>Desconfie de pessoas que possam estar em situação considerada suspeita,
+                conforme casos citados anteriormente;</li>
+            <li>Mantenha portas e portões sempre fechados;</li>
+            <li>Nunca abra portas ou portões a estranhos,
+                mantendo contato com a portaria para saber do que
+                se trata;</li>
+            <li>Ao chegar ou sair da garagem de seu condomínio,
+                observe se não há por perto pessoas em atitudes
+                suspeitas;</li>
+            <li>Acione a Polícia Militar, através de seu telefone de emergência (190), passando
+                dados e informações completas, a fim de facilitar a ação da Polícia;</li>
+            <li>Avise o síndico, moradores e demais funcionários da possível suspeita;</li>
+            <li>Nunca saia de dentro do condomínio para averiguar situações em que haja pessoas
+                em atitudes estranhas, pois poderá ser uma armadilha para render funcionários e/ou
+                moradores.</li>
+    
+            <h4>5.2. Casos de tentativa de invasão em condomínio para fins de roubo
+                ou furto:</h4>
+            <p>- Atualmente, os agressores da sociedade não têm poupado esforços a fim de
+                alcançarem seus objetivos delituosos em condomínios, quer seja escalando a parte
+                externa do prédio ou saltando muros, quer seja entrando pela portaria principal, através
+                do emprego da violência, tendo como seu principal aliado o
+                fator surpresa ou, até mesmo, utilizando-se das mais inusitadas
+                maneiras para enganar condôminos e/ou funcionários.</p>
+            <p>-Suas sutilezas são utilizadas para que, ao adentrarem ao
+                condomínio, possam realizar invasões de domicílios, furtos,
+                roubos, seqüestros entre outros crimes, causando medo e pânico nas pessoas.</p>
+            <p>-Portanto, nestes casos, devem ser adotadas as seguintes precauções:</p>
+            <li>Mantenha todas as portas e/ou portões fechados, mesmo que um indivíduo estranho
+                force sua entrada por estes meios;</li>
+            <li>Acione a Polícia Militar, através de seu telefone de emergência (190), passando
+                todos os dados e informações corretos;</li>
+            <li>Acione o alarme sonoro ou o botão de pânico, se for o caso;</li>
+            <li>Avise o síndico, os moradores, bem como os demais funcionários para que evitem
+                sair das residências ou de seus postos de trabalho, a fim de não se tornarem vítimas
+                dos assaltantes;</li>
+            <li>Não permita que nenhuma pessoa estranha adentre ao condomínio durante o
+                desenrolar dos fatos;</li>
+            <li>Crie uma senha de emergência onde uma frase pode ser definida como indicativa de
+                perigo, que seria dita ao porteiro quando o morador for entrar no condomínio
+                acompanhado de um ladrão, sendo que o funcionário tomaria as providências cabíveis
+                para o caso;</li>
+            <li>Caso surpreenda um meliante escalando ou pulando o muro, grite bem alto ou faça
+                bastante barulho, sem ser avistado, de maneira que possa ser ouvido e percebido pelo
+                ladrão e por outras pessoas;</li>
+            <li>Quando for surpreendido por assaltantes, procure manter a calma e tente acalmá-los,
+                não reaja, não os encare de maneira afrontosa nem discuta com eles;</li>
+            <li>Com a chegada da Polícia, facilite sua ação fornecendo subsídios concretos para sua
+                atuação.</li>
+    
+            <h4>5.3 - Em caso de roubo:</h4>
+            <li>Não reaja em hipótese alguma, e procure manter-se o mais calmo possível;</li>
+            <li>Procure ganhar tempo, sem que o bandido perceba que você está fazendo isso;</li>
+            <li>Também com muito cuidado e de forma dissimulada, observe
+                tudo que se passa à sua volta, captando o maior número de
+                informações possíveis.</li>
+            <li>Procure observar, discretamente, as características físicas e trajes dos
+                assaltantes; o que eles falaram; os objetos roubados; o número e o tipo de armas que
+                eles portavam; se chegaram motorizados; se houve seqüestro, preste atenção na
+                direção que os bandidos tomaram na fuga.</li>
+            <li>Fique atento a tudo que se passar;</li>
+    
+            <h4></h4>
+            <li>Providencie socorro para as vítimas se houver;</li>
+            <li>Chame a polícia;</li>
+            <li>Preserve o local de crime. Não mexa em nada até
+                que a Polícia libere o local;</li>
+            <li>Pense em possíveis testemunhas;</li>
+            <li>Com a chegada da polícia, contribua para a
+                eficiência do trabalho policial, respondendo a todas
+                as perguntas de forma clara e objetiva, e informando tudo que possa auxiliar os
+                policiais.</li>
+    
+            <h4>Capítulo VI - Segurança Básica em Elevadores.</h4>
+            <li>Oriente moradores e funcionários para que fiquem atentos a qualquer anomalia no
+                funcionamento dos elevadores, informando pormenores da irregularidade para que se
+                possa acionar a empresa responsável para que o problema seja sanado o mais rápido
+                possível;</li>
+            <li>Providencie para que as casas das máquinas, halls, cabina e poço estejam sempre
+                secos e limpos, evitando-se que se atire lixo neste;</li>
+            <li>Zele para que somente pessoas autorizadas, tenham acesso aos equipamentos ou a
+                casa de máquinas, e que sua chave fique em local seguro, disponível apenas aos
+                técnicos da empresa conservadora ou pessoas habilitadas;</li>
+            <li>Tenha em mãos os telefones da empresa conservadora e do Corpo de Bombeiros,
+                para situações de emergência; </li>
+            <li>Não transporte pessoas ou carga acima do limite de capacidade do elevador;</li>
+            <li>Em caso de desnivelamento do elevador, desligue-o imediatamente e acione o
+                técnico;</li>
+            <li>Caso pessoas fiquem presas no elevador, deve-se tranqüilizá-las e chamar
+                imediatamente a empresa de manutenção, evitando-se retirá-las por conta própria, pois
+                o risco é muito alto;</li>
+            <li>Em situações de incêndio não utilize o elevador e estacione-o no térreo.</li>
+    
+            <h4>Capítulo VII - Medidas para Prevenção ao Uso de Drogas em
+                Condomínios:</h4>
+            <p>- A educação preventiva vem sendo reconhecida
+                como a grande saída para diversos males que
+                assolam nossa sociedade, e existem inúmeras
+                atividades a serem realizadas, todas elas
+                devendo, obrigatoriamente, estimular a
+                informação e o diálogo na família a respeito desse
+                enorme problema que afeta a todos, sem
+                distinção de sexo, raça ou classe social. Para
+                tanto passaremos algumas dicas básicas de
+                prevenção ao uso de drogas: </p>
+            <li>Esclareça as crianças, desde a infância, sobre o mal que as drogas causam ao
+                viciado;</li>
+            <li>Converse com os professores de seus filhos, para saber de seu aproveitamento
+                escolar. Acostume-se a verificar a caderneta de presença dos filhos, para constatar
+                sua assiduidade às aulas;</li>
+            <li>Conquiste a confiança dos filhos. É melhor que eles peçam um conselho aos pais do
+                que a um amigo;</li>
+            <li>Más companhias conduzem ao uso de drogas e ao crime. Selecione as companhias
+                dos filhos e os ambientes que eles freqüentam (clubes, bailinhos etc...)</li>
+            <li>Promova palestras educativas no condomínio para pais, adolescentes e crianças.</li>
+    
+            <h2>Capítulo VIII - Telefones de emergência úteis</h2>
+            <h3>EMERGÊNCIA SERVIÇOS</h3>
+            <p>190 - Polícia Militar</p>
+            <p>193 - Corpo de Bombeiros</p>
+            <p>197 - Polícia Civil</p>
+            <p>192 - Ambulância (SAMU)</p>
+            <p>199 - Defesa Civil</p>
+            <p>151 - PROCON</p>
+            <p>181 – Disque Denúncia 0800-5700100 - Correios</p>
+            <p>153 – Guarda Civil Metropolitana</p>
+            <p>150 - Vigilância Sanitária</p>
+    
+            <p>É importante que se tenha na portaria, além dos telefones usuais para o dia
+                a dia, os números de telefones da Companhia da Polícia Militar, das Bases
+                Comunitárias de Segurança, do Distrito Policial, do Corpo de Bombeiros e do
+                Hospital da região em que se encontra o situado o condomínio. Saiba os
+                telefones e localização das Unidades da Polícia Militar de seu bairro ou região.
+                Seja cidadão atuante na área de segurança, participe das reuniões do CONSEG.
+                Segurança Pública, dever do Estado e responsabilidade de todos.</p>
+    
+            <h3>BIBLIOGRAFIA</h3>
+            <p>http://www.policiamilitar.sp.gov.br/inicial.asp, dicas de segurança.</p>
+            <p>GODOY, José E. Técnicas de Segurança em Condomínios, São Paulo, 2ª Edição,
+                SENAC, 2009.</p>
+            <p>Monografia Segurança em Condomínios Residenciais Verticais de José Elias de
+                Godoy na conclusão do curso de Gestão de Segurança Empresarial pela Universidade
+                Anhembi-Morumbi, São Paulo, 2001.</p>
+            <p>Apostila Segurança Predial - Treinamento de Segurança para Condomínios,
+                SECOVI-RJ e SSP-RJ, 2° edição, 2001.</p>
+            <p>Manual Guia Prático de Segurança Condominial de José Elias de Godoy e Lúcio
+                Mamede de Souza Filho, São Paulo, 2002.</p>
+        </section>
+    </div>
 
-Capítulo I - Como deve ser a segurança de um condomínio. 
-Condomínio é definido como domínio exercido juntamente
-com outrem, uma co-propriedade, podendo ser também um
-conjunto residencial composto de edifícios e/ou casas,
-geralmente cercado, com acesso controlado, e cujos
-moradores dividem equipamentos comunitários, portanto,
-todos têm o dever de mantê-lo e
-protegê-lo a fim de preservar sua tranqüilidade, na busca
-de melhor qualidade de vida.
-Para que haja uma segurança
-mais eficiente é necessário que
-suas instalações físicas estejam cercadas e o máximo
-possível fechadas. Diante disto os condomínios devem
-possuir:
-1.1. Barreiras físicas.
-- São obstáculos naturais ou artificiais (estruturais)
-que servem para impedir ou dificultar o acesso de
-pessoas estranhas em locais delimitados ou proibidos,
-e controlar os permitidos em um condomínio, além de
-proteger os seus pontos estratégicos e vulneráveis.
-Dentre os mais usuais podemos citar: as barreiras perimetrais junto às divisas tais
-como vegetação, muros, cercas, concertinas, alambrados e
-ofendículos; cancelas, guaritas nas portarias, portões com
-eclusas, interfone, espelhos refletores (côncavos ou
-convexos), grades, portas internas ou intermediárias,
-passador de objetos, etc..
-1.2. Iluminação. 
-- É fundamental que as dependências do condomínio sejam bem
-iluminadas, a fim de desestimular a ação de infratores da lei.
-- Aconselha-se utilizar luminárias e holofotes, podendo
-ser complementado por sensores de presença.
-1.3. Sinalização.
-- A sinalização pode ser visual, através de
-placas, sinais luminosos ou sonoros, ou ainda se
-utilizando dispositivos sonoros eletrônicos ou
-apitos, ou mesmo códigos e senhas
-convencionadas entre os condôminos e funcionários.
-1.4. Sistemas Eletrônicos de Segurança em Condomínios.
-- O sistema de segurança ideal é aquele que promove a
-interação do homem com os equipamentos eletrônicos, a
-fim de que a coligação entre ambos possa promover um
-nível de proteção satisfatória. Atualmente no mercado,
-existem os mais variados números e tipos de equipamentos
-eletrônicos de segurança à disposição dos usuários,
-portanto, deve-se adquirir aqueles que mais se adaptem às necessidades do
-condomínio.
-- Destacaremos, a seguir, os sistemas e equipamentos eletrônicos de segurança mais
-utilizados em condomínios:
-1.4.1. Sistemas de alarmes.
-- São equipamentos eletrônicos, sonoros ou não, que servem 
-para alertar sobre situações incomuns em residências ou condomínios, tais como
-violação de procedimentos e locais, proteção contra roubos, furtos, alagamentos,
-incêndios, etc.
-- Esses sistemas se destacam com as seguintes características: alarme de intrusão;
-sensores de porta e janela, botões de pânico, infravermelho passivo e ativo, etc.
-1.4.2. Cercas eletrificadas.
-- É um sistema que está sendo bem aceito em condomínios, pois inibe possíveis
-tentativas de intrusão pela ostensividade e pelo receio das descargas elétricas.
-1.4.3. CFTV - Circuito Fechado de Televisão.
-- Através de câmeras com ou sem fio, instaladas em pontos
-estratégicos da residência ou do condomínio, cujas imagens
-devem ser gravadas, é possível se ter uma visualização de todo o
-ambiente.
-- A proteção ficará maior se as imagens também forem acessadas
-pelos condôminos.
-1.4.4. Controle de Acesso Informatizado.
-- O Sistema de Controle de Acesso tem como objetivo
-principal efetuar o controle eletrônico do movimento de
-pessoas - funcionários e visitantes - dentro de áreas
-estratégicas dos condomínios. É bastante utilizado em condomínios comerciais.
-1.4.5. Sistemas de Segurança Monitorados.
- - Sistemas monitorados oferecem serviço 24 horas, servem para reduzir riscos de
-intrusão, incêndios e, combinando-se vários circuitos, podem ser empregados como
-controle de acesso, CFTV (circuito fechado de TV) e até como segurança de 
-informação.
-Capítulo II - Procedimentos Preventivos Básicos de Segurança em
-Condomínios.
-Verificaremos a seguir alguns procedimentos usuais a serem seguidos tanto por
-síndicos, moradores quanto pelos funcionários do condomínio, os quais devem ser 
-adotados como medidas de segurança, bem como contribuir na prevenção de roubos e
-furtos.
-2.1. Dicas de Segurança para os Síndicos.
-2.1.1. Junto aos condôminos:
-● Desenvolva com o conselho de condôminos
-normas firmes e transparentes sobre a segurança do
-condomínio, discriminando, inclusive, punições;
-● Em reuniões condominiais aborde assuntos
-relativos à segurança de seu condomínio;
-● Forme um conselho ou comissão específicos
-para tratar do assunto segurança;
-● Incentive a participação de todos os moradores e funcionários quando for tratado
-o tema segurança.
-2.1.2. Junto aos funcionários:
-● Na contratação de novos funcionários entreviste um
-de cada vez, de preferência na portaria;
-● Obtenha o máximo de informações possíveis sobre o
-candidato e solicite atestado de antecedentes e de
-referência pessoal de todos os funcionários a serem
-contratados;
-● Contrate funcionários que já possuam cursos de formação e treinamento para
-poderem trabalhar no condomínio;
-● Promova e invista na reciclagem dos funcionários
-através de cursos especializados;
-● Fiscalize a rotina de trabalho de funcionários e
-zeladores, procurando 
-acompanhar de perto suas condutas assim como não atribuir missão que não lhes seja
-pertinente;
-● Apresente e informe aos moradores quando da substituição ou admissão de um
-funcionário, porém é aconselhável que se evite rotatividade;
-● O novo empregado ou o substituto não deve ficar sozinho até
-conhecer todos os moradores e a rotina de trabalho do prédio;
-● Oriente sempre os funcionários, principalmente os
-porteiros e garagistas, para que não saiam de seus postos de
-trabalho, evitando deslocá-los para prestar serviços particulares.
-2.1.3. Com relação à segurança do condomínio:
-● Cadastre e mantenha atualizada a relação de todos
-os moradores do condomínio, onde deverá constar
-desde a placa de seu veículo até o nome de parentes
-próximos para contato em caso de emergência;
-● Conheça a legislação sobre o condomínio e sua
-administração;
-● Conheça profundamente o estatuto e as normas de
-seu condomínio;
-● Procure acompanhar o andamento das obras
-realizadas no condomínio;
-● Mantenha suficientemente iluminadas as entradas do condomínio, evitando o uso
-de obras de arte, de decoração e de jardinagem que obstruam a ampla visão do local
-ou criem pontos de penumbra à distância;
-● Atente para a segurança periférica do condomínio, tais como muros, grades,
-cercas e alambrados, bem como de vias públicas de acesso ao condomínio, devendo
-existir regulamentação para estacionamento de veículos, sinalização, iluminação, entre
-outros;
-● Mantenha os equipamentos de segurança e de comunicação sempre em perfeito
-estado de funcionamento; 
-● Mantenha sempre na portaria livros de registro para controle do serviço, de
-entrada e saída de pessoas, veículos e materiais;
-● Faça a manutenção periódica das portas de entrada e portões de garagem que
-devem, em caso de quebra, ser imediatamente consertados;
-● Instale dispositivos eletrônicos de segurança, se possível, com monitoramento
-por empresas especializadas e idôneas;
-● Caso for terceirizar os serviços como portaria, limpeza, manutenção e segurança
-procure empresas idôneas e legalmente constituídas no mercado;
-● Atualize-se no que diz respeito a assuntos relativos à segurança, procurando o
-que há de mais moderno no mercado para possível implantação no condomínio;
-● Contrate seguradora idônea para que se possa fazer o seguro da edificação com
-apólices que, de preferência, garantam cobertura completa de sinistros, pois este é um
-dos itens em que o síndico é responsabilizado, civil e criminalmente, em caso de algum
-problema onde não se tenha uma cobertura ideal;
-2.2. Dicas de Segurança aos Condôminos.
-2.2.1. Com relação à segurança do condomínio:
-● Participe ativamente das reuniões referentes à segurança,
-inclusive fazendo parte das comissões ou conselhos de
-segurança do seu condomínio;
-● Obedeça às normas de segurança preconizadas para o
-seu condomínio;
-● Traga sempre informações sobre assuntos relativos à
-segurança, pois suas sugestões são valiosas para o aperfeiçoamento e atualização da
-proteção de todos;
-● Colabore com o síndico e demais moradores na formação de medidas que
-garanta a eficácia de todo o sistema de controle a ser implantado;
-● Compreenda e elogie as ações preventivas dos funcionários, pois, além de
-estarem cumprindo ordens, visam garantir a segurança do condomínio, mesmo quando
-estas atitudes representem algum transtorno para si ou para suas visitas; 
-● Conscientize seus parentes e empregados
-sobre a importância da integração de todos no
-sistema de segurança adotado pelo condomínio;
-● Não se exponha desnecessariamente;
-somente desça à portaria quando o assunto lhe
-for pertinente;
-● Avise a portaria para que receba suas
-encomendas, enviando-lhes o cheque ou dinheiro para o pagamento, se for o caso;
-● Evite comentar sobre sua vida íntima, seus bens, patrimônio e ganhos na frente
-de estranhos ou até mesmo de funcionários;
-● Criar um gesto ou até mesmo uma “careta”, comum a todos os condôminos, a ser
-adotado quando forem atender à porta através do olho mágico, para avisar os demais
-moradores que se encontra naquele momento sob ameaça de assaltantes;
-● Ao entrar ou sair do prédio, observe se há pessoas nas proximidades. Caso
-perceba alguma movimentação estranha, não entre ou saia, ligue imediatamente para
-a polícia, avise seus familiares e o porteiro;
-● Aguarde para entrar ou sair se o porteiro estiver
-identificando um estranho;
-● Antes de entrar na garagem, verifique se há algum
-veículo atrás do seu, se está em situação suspeita ou se
-seus ocupantes são moradores do condomínio. Ao sair,
-também observe se há alguma situação de suspeição;
-● Se o portão da garagem funciona através de
-acionamento automático, aguarde para que a porta esteja totalmente fechada antes de
-se dirigir para sua vaga;
-● Ao estacionar seu veículo na garagem ou na rua, nunca o deixe aberto e nem
-com objetos de valor à vista, ligue sempre o alarme do seu veículo;
-● Procure conhecer os hábitos de seus vizinhos e se relacionar bem com eles.
-2.2.2. Com relação aos empregados domésticos: 
-● Na contratação de novos funcionários entreviste um
-de cada vez, de preferência na portaria. Nunca os leve ao
-apartamento;
-● Obtenha o máximo de informações possíveis sobre o
-candidato e solicite atestado de antecedentes e referências
-pessoais de todos os funcionários a serem contratados;
-● Oriente seus funcionários para que nunca comentem
-sobre seus hábitos;
-● Acautele-se com funcionários que aceitam trabalhar ganhando pouco e passam
-imagem de muito eficientes. Observe-os atentamente, principalmente em relação à
-mudanças de comportamento;
-2.2.3. Com relação à segurança do lar:
-● Evite deixar as chaves da sua residência, bem como
-seus objetos pessoais na portaria do condomínio, se for o
-caso deixe-os com um vizinho de confiança;
-● Em casos de perda das chaves, troque imediatamente
-as fechaduras ou cilindros;
-● Ao mandar fazer cópias das chaves presencie
-pessoalmente sua reprodução;
-● Evite deixar recados na portaria ou bilhetes afixados
-na porta da residência quando for passar um final de
-semana fora;
-● Em caso de viagem mais prolongada, providencie uma pessoa de sua inteira
-confiança para tomar conta da residência ou mesmo peça ajuda a um vizinho para
-olhar seu apartamento;
-● Caso resida nos dois primeiros andares do prédio, proteja as áreas de acesso
-com grades reforçadas;
-● Instale olho mágico de 180° nas portas que dão acesso às partes externas de
-sua residência; 
-● Utilize nas portas trincos e trancas complementares, dando preferência a
-fechaduras quádruplas;
-● Atente também, para as janelas, complementando as fechaduras com trancas
-especiais;
-● Antes de se deitar, à noite, revise o fechamento de portas e janelas;
-● Instale alarmes com dispositivos sonoros nas principais entradas da residência;
-● Mantenha sempre em perfeito funcionamento os meios de comunicação, tais
-como telefones e interfones;
-● Atente para atos e condições inseguras a fim de evitar acidentes dentro de seu
-lar.
-2.3. Dicas de segurança aos funcionários.
-2.3.1. Orientações gerais:
-● Participe do sistema de segurança do condomínio;
-● Obedeça às ordens e normas relativas à segurança;
-● Preencha corretamente os relatórios existentes, quer
-seja de serviço ou das condições de segurança do
-condomínio;
-● Traga sempre informações e sugestões para a melhoria de seu serviço e das
-condições de segurança do condomínio;
-● Fique sempre atento para o que acontece no prédio, observando se há alteração
-na rotina do condomínio;
-● Não converse com estranhos, e, em hipótese alguma, forneça informações sobre
-o condomínio e os moradores;
-● Não se impressione com boa aparência e suposta
-autoridade. Observe se o traje combina com a aparência
-e também com o modo da pessoa falar;
-● Observe bem as pessoas, fique atento para algum
-volume suspeito no corpo do indivíduo, principalmente na situação de porte de arma;
-● Redobre a atenção nos horários de maior movimento, que normalmente são das 
-06h às 09h, das 11h às 14h e das 17h às 20h, tomando especial cuidado no período da
-manhã;
-● Quando houver imóvel a ser locado ou vendido,
-exija o aviso antecipado sobre a visita, além da
-presença do proprietário ou de corretor de imóvel
-devidamente registrado no Conselho Regional de
-Corretores de Imóveis (CRECI) e que esteja vinculado a
-uma corretora ou administradora credenciada;
-● Suspeite de funcionários públicos, inclusive policiais, em carros particulares,
-querendo entrar no prédio (exceto em situações emergenciais), sem a devida
-identificação. Não abra a porta sem autorização, chame o síndico e exija mandado
-judicial;
-● Suspeite também de pessoa se dizendo oficial de justiça, que queira forçar a
-entrada no condomínio sem querer apresentar identificação e nem o mandado judicial;
-● Inteire-se das diferentes artimanhas utilizadas pelos infratores da lei;
-● Sempre consulte o morador sobre a viabilidade de autorização de entrada de
-visitantes ao condomínio;
-● Nos horários de limpeza e recolhimento de lixo, mantenha as entradas do
-condomínio fechadas;
-● Não deixe crianças desacompanhadas ou que estiver em companhia de pessoas
-estranhas saírem do condomínio;
-● Leve todos os problemas atinentes ao serviço ao morador responsável pela área
-ou ao síndico.
-2.3.2. Cuidados na portaria.
-● A portaria deverá estar sempre fechada, e
-localizada dentro dos limites do condomínio, não
-devendo avançar em área externa à grade ou muro de
-proteção;
-● Permaneça sempre em seu posto de trabalho,
-evitando deslocar-se para prestar serviços particulares 
-a condôminos, mesmo que seja na área do condomínio;
-● Nunca abandone seu posto de trabalho para atender estranhos no portão ou
-através das grades, dando condições para ser imobilizado por arma de fogo;
-● Não permita que pessoas estranhas
-adentrem ao portão para conversar com o porteiro
-ou outro funcionário pela janela de sua guarita,
-mesmo que seja para
-completar a identificação
-ou motivo de visita;
-● Durante a noite, mantenha o interior da portaria com
-pouca luz. O exterior deve estar bem iluminado;
-● Tenha sempre à mão a lista de telefones úteis.
-● Se houver sistema de CFTV em seu prédio, é importante dar atenção aos
-monitores, porém não se distraia a ponto de prejudicar o trabalho;
-● Não assista TV na portaria durante o serviço, assim como evite uso de rádio em
-volume alto;
-● Domine o manejo dos equipamentos que estão sob sua responsabilidade.
-Capítulo III - Controle de Entrada e Saída de Pessoas pela Portaria.
-3.1. Portaria.
-- É o principal ponto de segurança do condomínio, pois por ela circulam todas as
-pessoas, materiais e veículos que entram ou saem deste, de forma regular.
-- O porteiro/vigia tem por função normal controlar essa circulação através da 
-identificação de pessoas, funcionários do condomínio, empregados de condôminos,
-visitantes, entregadores de serviço, entrada e saída de veículos e conferência de
-mercadorias deixadas na portaria.
-- Para isto, cada condomínio deve adotar suas normas de procedimento a fim de que
-atenda às suas peculiaridades, propiciando as condições mínimas de trabalho aos
-funcionários da portaria, principalmente no tocante a segurança, equipamentos
-adequados ao serviço, iluminação, e outros de acordo com as características do
-condomínio.
-- Verificaremos alguns itens a serem seguidos na atuação em Portarias, porém tais
-regras podem ser acrescidas por tantas outras quanto forem necessárias:
-3.1.1. Identificação de visitantes:
-● Faça a identificação visual da pessoa;
-● Cumprimente-a (bom-dia, boa-tarde, boa-noite);
-● Solicite, com educação, um documento com foto para
-conferir seus dados completos;
-● Mantenha os portões fechados;
-● Os visitantes devem aguardar do lado de fora do condomínio
-ou em um local reservado para isto;
-● Entre em contato com o morador informando-o sobre a presença do visitante e da
-conveniência de sua entrada ou não;
-● Em caso de dúvida por parte do condômino, solicite sua presença junto à portaria a
-fim de identificar o visitante pessoalmente ou através do sistema de CFTV ligado ao
-apartamento;
-● Sendo autorizada sua entrada, anote os dados da
-pessoa, em livro próprio, e devolva seu documento,
-agradecendo;
-● Entregue à pessoa o crachá de identificação ou
-autorização, caso seja norma do condomínio;
-● Indique ou peça que algum funcionário do condomínio conduza a pessoa ao local ou 
-residência do condômino;
-● Na saída, recolha o crachá ou a autorização com a devida assinatura do visitado.
-3.1.2. Identificação de prestadores de serviços:
-● Faça a identificação visual da pessoa;
-● Cumprimente-a (bom-dia, boa-tarde, boanoite);
-● Peça, com educação, um documento com foto
-para conferir seus dados completos, solicite,
-também, seu documento funcional ou crachá de
-identificação da empresa em que trabalha;
-● Mantenha os portões fechados;
-● A pessoa deverá aguardar do lado de fora do condomínio ou em local apropriado;
-● Contate o condômino para verificar se o prestador de serviço é esperado;
-● Caso haja dúvida sobre a presença do prestador de serviço, solicite a presença do
-condômino até a portaria para identificá-lo pessoalmente ou através do sistema de
-CFTV ligado ao apartamento;
-● Sendo autorizada a entrada da pessoa, anote seus dados em livro próprio,
-registrando o horário de entrada e saída, devolva-lhe os documentos, agradecendo;
-● Entregue o crachá de identificação de prestador de serviço ou uma autorização de
-entrada;
-● Peça que algum funcionário do condomínio o acompanhe
-até o local do serviço ou à residência do condômino;
-● Na saída, recolha o crachá ou a autorização devidamente
-assinada pelo condômino;
-● O condomínio deverá ter um horário predeterminado
-para a autorização de entrada de prestadores de serviço,
-evitando-se os horários noturnos.
-3.1.3. Identificação de entregadores de mercadoria 
-(encomendas, pizzas, flores, presentes ou outros objetos):
-● Faça a identificação visual da pessoa;
-● Cumprimente-a (bom-dia, boa-tarde, boa-noite);
-● Mantenha os portões fechados;
-● A pessoa deverá aguardar do lado de fora do condomínio ou em local reservado para
-isto, devendo ser tratada à distância, pois é prática comum infratores da lei inventarem
-uma entrega fictícia;
-● Avise o condômino, solicitando sua presença ou de algum funcionário seu na portaria
-a fim de pegar a encomenda;
-● Jamais permita que o entregador leve pessoalmente a encomenda até a residência;
-● Caso o material venha acompanhado de Nota Fiscal, receba e assine o recibo;
-● Na ausência do condômino, receba e guarde para posteriormente ser retirada pelo
-morador ou entregue por um funcionário.
-3.1.4. Controle de entrada e saída de prestadores de serviço por empresas de
-terceirização de mão-de-obra:
-● Solicite ao funcionário o seu crachá ou documento de identificação da empresa,
-conferindo com a relação que possua na portaria;
-● Entregue o crachá de identificação do condomínio como prestador de serviços;
-● Anote seus dados em livro próprio, registrando o horário de entrada e saída;
-● Na saída, recolha o crachá de identificação.
-3.1.5. Controle de entrada e saída de veículos:
-● A identificação de todos os veículos que queiram entrar
-no condomínio é obrigação e dever do porteiro, vigia,
-vigilante, garagista ou zelador. Portanto, devem seguir as
-normas abaixo relacionadas: 
-● Jamais abra os portões sem antes ter certeza de que o veículo pertence a morador e
-que este se encontra em seu interior (ver quem é para depois abrir o portão);
-● Faça inspeção visual na pessoa e no veículo;
-● Nunca abra o portão da garagem a veículos e pessoas estranhas ao condomínio,
-inclusive não se deixe impressionar com veículos novos (de luxo) ou importados que
-apontem em direção da garagem;
-● Antes de abrir o portão da garagem, verifique se não há risco de intrusão de alguma
-pessoa estranha junto com o veículo;
-● Preste atenção quando o motorista estiver acompanhado por pessoas estranhas ou
-em atitudes suspeitas. Observe possíveis sinais de alerta por parte do motorista, pois o
-condômino poderá estar sob ameaça de assaltante;
-● Nenhum veículo deve sair do condomínio quando o proprietário não estiver junto ou
-sem sua autorização expressa, principalmente quando se tratar de menor ou
-desconhecidos.
-- Em casos de veículos que venham entregar encomendas no interior do condomínio
-ou mudanças, além do descrito anteriormente deve-se:
-● Solicitar documentação do motorista e dos ajudantes, quando houver, a fim de anotála em livro próprio;
-● Em mudanças ou transporte de qualquer mobiliário deve-se entrar em contato com o
-condômino a fim de que seja certificado se realmente há sua autorização e que todo o
-material retirado é o determinado;
-● Em mudanças, quando o condômino estiver ausente, somente deixe que o veículo
-seja carregado quando houver autorização por escrito por parte do morador;
-● O zelador ou outro funcionário determinado pelo síndico deverá acompanhar
-qualquer tipo de carga ou descarga no interior do condomínio;
-● Verificar se todos que entraram com o veículo estão nele saindo e/ou se alguém foi
-autorizado a permanecer no condomínio;
-● Caso perceba alguma irregularidade, retenha o veículo e acione seu superior
-imediato ou, se for o caso, a Polícia;
-● Para a realização de mudanças deve ser seguido o estabelecido na convenção do
-condomínio, sendo viável que esta não ocorra no período noturno. 
-3.1.6. Garagens:
-- Sem dúvida alguma, em se falando de proteção, a
-garagem é um dos pontos mais vulneráveis dos
-conjuntos residenciais ou de maior indisciplina e até
-descaso por parte dos moradores, pois estes não
-tomam as devidas cautelas ao entrar ou sair do
-condomínio, ou então deixam de seguir as orientações
-preconizadas em Assembléias de Condôminos.
-- Por este motivo, é importante construir eclusas, ou seja, dois portões acionados
-eletronicamente que confinem o veículo entre si, de modo que uma delas se abra
-somente quando a outra estiver fechada, podendo ser acionadas pela portaria ou pelo
-próprio condômino, evitando-se, assim, a entrada do meliante “carona”, isto é, aquele
-que espera o carro entrar e aproveita a porta ainda aberta para adentrar ao condomínio
-e praticar, posteriormente, seus atos criminosos.
-- Aliado a isto, deve-se utilizar um sistema que muito se tem destacado pela sua
-praticidade, é aquele em que cada morador tem um controle remoto acionando o
-portão automático para entrar e sair da garagem sem a ação da portaria. Caso não
-seja possível adotar esses sistemas, torna-se necessária a contratação de garagista
-para controlar o acesso de veículos. Além disso, toda garagem deve possuir espelhos
-convexos que facilitem a visualização de porteiros ou garagistas.
-3.1.7. Controle de entrada e saída de materiais:
-- Quando o material for deixado na portaria, o funcionário
-deverá tomar a seguinte atitude:
-● Fazer inspeção visual na pessoa e no material;
-● Verificar seu conteúdo sem, no entanto, abri-lo;
-● Anotar os dados do portador, do remetente e residência 
-do destinatário;
-● Anotar a data e a hora da entrega em livro próprio;
-● Conferir o material juntamente com a Nota Fiscal;
-● Não autorizar a saída de pessoas estranhas ao condomínio que estejam de posse de
-objetos ou pacotes sem obter prévia autorização do condômino;
-● Não entregar chaves, objetos ou pacotes de moradores a pessoas estranhas sem
-autorização expressa;
-● Revistar bolsas e sacolas de funcionários e prestadores de serviço, quando o
-Estatuto ou Regimento Interno do Condomínio assim determinar.
-Capítulo IV - Modo de Agir dos Ladrões.
-- Os infratores da lei atualmente têm utilizado os mais
-diversos ardis para entrar nos condomínios com a finalidade
-de cometerem algum tipo de delito contra seus moradores.
-- Os fatos mostram que em 90% das ocorrências de roubo
-em condomínios, os assaltantes entraram pela porta da
-frente do prédio, ou seja, de alguma forma burlaram ou
-violaram o sistema de segurança montado, ludibriando principalmente o porteiro de
-serviço. 
-4.1. Modus Operandi (forma de agir).
-● Saltando os muros e cercas do pátio em locais vulneráveis e fora da visibilidade do
-porteiro ou vigilantes;
-● Pulando os muros e cercas;
-● Como “passageiros” de veículos de entrega que entram na garagem;
-● Pelo portão de serviço travestido de prestadores de serviço da Telesp, Sabesp,
-Comgás, Eletropaulo, eletricistas, encanadores, entregadores de pizza e encomendas,
-etc.;
-● Iludindo o porteiro de forma que este permita que o ladrão entre pelo portão principal
-ou mesmo pelo portão da garagem;
-● Passando-se por comprador de imóvel, ludibriando o porteiro, sob a alegação de ter
-que olhar, a fim de fazer uma avaliação;
-● Estando acompanhado de uma mulher bonita a fim de distrair a atenção do porteiro
-para persuadi-lo a abrir o portão;
-● Pela porta principal ou portão da garagem, acompanhando um morador que entra a
-pé ou dirigindo um veículo, ameaçado e subjugado pelo assaltante;
-● Tocando a buzina ou piscando os faróis do veículo defronte o portão da garagem
-para que o porteiro o abra inocentemente;
-● Pelo portão da garagem quando este permanece aberto durante a entrada ou saída
-de veículos;
-● Pelo uso de artimanha junto ao porteiro, dizendo a este que veio buscar uma TV,
-carro, sofá, etc., do morador, exibindo, até mesmo, bilhete e telefone do condômino
-para verificação;
-● Como morador do próprio condomínio (normalmente adolescente) ou mesmo como
-empregado;
-● Passando-se por amigo de moradores ou ainda dizendo-se vizinho a fim de
-acompanhar o condômino e enganar o porteiro;
-● Apresentando-se como entregador de cesta de café da manhã, flores, encomendas
-em geral, bem como entregador de jornais e revistas durante a noite; 
-● Apresentando-se como Funcionários Públicos, querendo forçar a entrada no
-condomínio sem se identificar;
-● Por ação violenta de surpresa, com quadrilhas especializadas em tais delitos.
-4.2. Situações que levantam suspeitas:
-- Verificaremos, a seguir, situações em que as pessoas podem estar em atitude
-suspeita e que demandam observação minuciosa por parte de todos os integrantes do
-condomínio:
-● Pessoas paradas estranhamente na rua, lendo jornal ou
-andando vagarosamente próximas ao condomínio,
-observando-o atentamente;
-● Indivíduos que permaneçam parados em ponto de ônibus,
-sem tomar nenhum deles;
-● Pessoas que demonstrem nervosismo sem motivo
-aparente;
-● Mendigos ou vendedores-ambulantes estranhos ao local;
-● Aparentes funcionários da Companhia Telefônica, de Água e Esgoto, de Energia
-Elétrica, de entrega de Gás, etc., que simulam consertos a serem executados;
-● Indivíduos fazendo aparentes consertos demorados em automóveis próximos à
-entrada do condomínio;
-● Pessoa que preste muita atenção ao condomínio, observando principalmente sua
-portaria ou garagem;
-● Pessoas que estejam de carro, motocicleta ou bicicleta, sempre com os mesmos
-ocupantes, que passem lentamente, por várias vezes, em frente do condomínio como
-se estivessem observando a rotina da portaria e da garagem. Nestes casos procure
-anotar os dados do veículo (placa, modelo, cor, etc.) e as características das pessoas
-(sexo, altura, cor, roupas, etc), transmitindo-os à polícia;
-● Indivíduos que demonstrem muito interesse pelo sistema de segurança do
-condomínio;
-● Pessoas andando juntas, vagarosamente, sem conversar; 
-● Indivíduos com roupa de inverno (pesadas) em tempo quente;
-● Pessoas usando possíveis disfarces, tais como peruca, barba, bigode, óculos
-escuros em dia sem sol;
-● Técnicos não solicitados (telefone, eletricistas, gás, eletrodomésticos, serviços
-gerais, etc.) que insistam em entrar no condomínio ou que solicitem consertos nas
-residências;
-● Pessoas muito bem vestidas e extremamente simpáticas que se fazem passar por
-compradores de imóveis que, procurando ganhar a confiança dos porteiros,
-conseguem entrar nas dependências do condomínio, a fim de consumar seus delitos;
-● Vendedores, pedintes, pregadores religiosos que insistam em entrar no condomínio
-ou que solicitem a presença de moradores à portaria;
-● Pessoas que, durante a conversa, escondam as mãos em bolsos de blusas ou de
-jaquetas, onde possam estar escondendo armas.
-● Indivíduos que observam um veículo (quando estacionado) e/ou pareçam aguardar a
-chegada do dono para apanhá-lo;
-● Motoristas ou motoqueiros que se aproximem exageradamente de moradores
-quando estiverem adentrando ao condomínio;
-● Pessoas em grupo ou mesmo isoladas que procurem aproximação física de
-moradores nas proximidades do condomínio;
-● Veículos estacionados nas imediações do condomínio por muito tempo, com pessoas
-em seu interior, principalmente à noite;
-● Veículo estacionado nas proximidades do condomínio por mais de 24 horas,
-parecendo haver sido abandonado no local;
-● Telefonemas de pessoas estranhas que solicitam informações confidenciais e
-pessoais de moradores ou de funcionários do condomínio;
-● Desaparecimento de correspondências da caixa do correio do condomínio;
-● Pessoas que resistam quando lhes é solicitado algum documento de identidade na
-portaria do condomínio;
-● Indivíduos muito bem trajados, que se fazem passar por pessoas de classe social
-elevada, intitulando-se doutores ou mesmo autoridades, forçando sua entrada no
-condomínio, intimidando os porteiros; 
-● Pessoas na rua simulando acidentes e que pedem socorro, solicitando, inclusive,
-para entrar no condomínio, a fim de ligar para os órgãos de emergência, o que pode
-ser uma armadilha ou cilada;
-● Entregadores de pizzas, flores, refeições, etc., e mesmo de encomendas;
-Capítulo V - Medidas de Segurança em Caso de Emergência.
-Existem situações em que se torna necessário adotar determinados procedimentos em
-casos emergenciais. Para tanto, moradores devem estar preparados para enfrentar
-fatores adversos que venham atingir seu condomínio, sendo os mais comuns os
-seguintes:
-5.1. Casos de pessoas em atitudes suspeitas rondando o
-condomínio: 
-● Esteja atento a toda e qualquer movimentação estranha nos arredores do
-condomínio;
-● Desconfie de pessoas que possam estar em situação considerada suspeita,
-conforme casos citados anteriormente;
-● Mantenha portas e portões sempre fechados;
-● Nunca abra portas ou portões a estranhos,
-mantendo contato com a portaria para saber do que
-se trata;
-● Ao chegar ou sair da garagem de seu condomínio,
-observe se não há por perto pessoas em atitudes
-suspeitas;
-● Acione a Polícia Militar, através de seu telefone de emergência (190), passando
-dados e informações completas, a fim de facilitar a ação da Polícia;
-● Avise o síndico, moradores e demais funcionários da possível suspeita;
-● Nunca saia de dentro do condomínio para averiguar situações em que haja pessoas
-em atitudes estranhas, pois poderá ser uma armadilha para render funcionários e/ou
-moradores.
-5.2. Casos de tentativa de invasão em condomínio para fins de roubo
-ou furto:
-- Atualmente, os agressores da sociedade não têm poupado esforços a fim de
-alcançarem seus objetivos delituosos em condomínios, quer seja escalando a parte
-externa do prédio ou saltando muros, quer seja entrando pela portaria principal, através
-do emprego da violência, tendo como seu principal aliado o
-fator surpresa ou, até mesmo, utilizando-se das mais inusitadas
-maneiras para enganar condôminos e/ou funcionários.
--Suas sutilezas são utilizadas para que, ao adentrarem ao
-condomínio, possam realizar invasões de domicílios, furtos, 
-roubos, seqüestros entre outros crimes, causando medo e pânico nas pessoas.
--Portanto, nestes casos, devem ser adotadas as seguintes precauções:
-● Mantenha todas as portas e/ou portões fechados, mesmo que um indivíduo estranho
-force sua entrada por estes meios;
-● Acione a Polícia Militar, através de seu telefone de emergência (190), passando
-todos os dados e informações corretos;
-● Acione o alarme sonoro ou o botão de pânico, se for o caso;
-● Avise o síndico, os moradores, bem como os demais funcionários para que evitem
-sair das residências ou de seus postos de trabalho, a fim de não se tornarem vítimas
-dos assaltantes;
-● Não permita que nenhuma pessoa estranha adentre ao condomínio durante o
-desenrolar dos fatos;
-● Crie uma senha de emergência onde uma frase pode ser definida como indicativa de
-perigo, que seria dita ao porteiro quando o morador for entrar no condomínio
-acompanhado de um ladrão, sendo que o funcionário tomaria as providências cabíveis
-para o caso;
-●Caso surpreenda um meliante escalando ou pulando o muro, grite bem alto ou faça
-bastante barulho, sem ser avistado, de maneira que possa ser ouvido e percebido pelo
-ladrão e por outras pessoas;
-● Quando for surpreendido por assaltantes, procure manter a calma e tente acalmá-los,
-não reaja, não os encare de maneira afrontosa nem discuta com eles;
-● Com a chegada da Polícia, facilite sua ação fornecendo subsídios concretos para sua
-atuação.
-5.3 - Em caso de roubo:
-● Não reaja em hipótese alguma, e procure manter-se o mais calmo possível;
-●Procure ganhar tempo, sem que o bandido perceba que você está fazendo isso;
-● Também com muito cuidado e de forma dissimulada, observe
-tudo que se passa à sua volta, captando o maior número de
-informações possíveis. 
-• Procure observar, discretamente, as características físicas e trajes dos
-assaltantes; o que eles falaram; os objetos roubados; o número e o tipo de armas que
-eles portavam; se chegaram motorizados; se houve seqüestro, preste atenção na
-direção que os bandidos tomaram na fuga.
-• Fique atento a tudo que se passar;
-5.4 - Após um roubo.
-● Providencie socorro para as vítimas se houver;
-● Chame a polícia;
-● Preserve o local de crime. Não mexa em nada até
-que a Polícia libere o local;
-● Pense em possíveis testemunhas;
-● Com a chegada da polícia, contribua para a
-eficiência do trabalho policial, respondendo a todas
-as perguntas de forma clara e objetiva, e informando tudo que possa auxiliar os
-policiais.
-Capítulo VI - Segurança Básica em Elevadores.
-● Oriente moradores e funcionários para que fiquem atentos a qualquer anomalia no
-funcionamento dos elevadores, informando pormenores da irregularidade para que se
-possa acionar a empresa responsável para que o problema seja sanado o mais rápido
-possível;
-● Providencie para que as casas das máquinas, halls, cabina e poço estejam sempre
-secos e limpos, evitando-se que se atire lixo neste;
-● Zele para que somente pessoas autorizadas, tenham acesso aos equipamentos ou a
-casa de máquinas, e que sua chave fique em local seguro, disponível apenas aos
-técnicos da empresa conservadora ou pessoas habilitadas;
-● Tenha em mãos os telefones da empresa conservadora e do Corpo de Bombeiros,
-para situações de emergência; 
-● Não transporte pessoas ou carga acima do limite de capacidade do elevador;
-● Em caso de desnivelamento do elevador, desligue-o imediatamente e acione o
-técnico;
-● Caso pessoas fiquem presas no elevador, deve-se tranqüilizá-las e chamar
-imediatamente a empresa de manutenção, evitando-se retirá-las por conta própria, pois
-o risco é muito alto;
-● Em situações de incêndio não utilize o elevador e estacione-o no térreo.
-Capítulo VII - Medidas para Prevenção ao Uso de Drogas em
-Condomínios:
-- A educação preventiva vem sendo reconhecida
-como a grande saída para diversos males que
-assolam nossa sociedade, e existem inúmeras
-atividades a serem realizadas, todas elas
-devendo, obrigatoriamente, estimular a
-informação e o diálogo na família a respeito desse
-enorme problema que afeta a todos, sem
-distinção de sexo, raça ou classe social. Para
-tanto passaremos algumas dicas básicas de
-prevenção ao uso de drogas: 
-● Esclareça as crianças, desde a infância, sobre o mal que as drogas causam ao
-viciado;
-● Converse com os professores de seus filhos, para saber de seu aproveitamento
-escolar. Acostume-se a verificar a caderneta de presença dos filhos, para constatar
-sua assiduidade às aulas;
-● Conquiste a confiança dos filhos. É melhor que eles peçam um conselho aos pais do
-que a um amigo;
-● Más companhias conduzem ao uso de drogas e ao crime. Selecione as companhias
-dos filhos e os ambientes que eles freqüentam (clubes, bailinhos etc...)
-● Promova palestras educativas no condomínio para pais, adolescentes e crianças.
-Capítulo VIII - Telefones de emergência úteis na cidade de São Paulo
-EMERGÊNCIA SERVIÇOS
- 190 - Polícia Militar – COPOM 160 – Disque Saúde
- 193 - Corpo de Bombeiros – COBOM 195 - Sabesp
- 197 - Polícia Civil – CEPOL 0800- 7272196 - Eletropaulo
- 192 - Ambulância (SAMU) 0800-110197 - Comgás
- 199 - Defesa Civil 151 - PROCON
- 1188 - CET 156 - Prefeitura Municipal SP
- 181 – Disque Denúncia 0800-5700100 - Correios
- 153 – Guarda Civil Metropolitana 150 - Vigilância Sanitária 
-• Coordenadoria Estadual dos CONSEGs: 3291.6586/6587/6588/6589
-É importante que se tenha na portaria, além dos telefones usuais para o dia
-a dia, os números de telefones da Companhia da Polícia Militar, das Bases
-Comunitárias de Segurança, do Distrito Policial, do Corpo de Bombeiros e do
-Hospital da região em que se encontra o situado o condomínio. Saiba os
-telefones e localização das Unidades da Polícia Militar de seu bairro ou região.
-Seja cidadão atuante na área de segurança, participe das reuniões do CONSEG.
-Segurança Pública, dever do Estado e responsabilidade de todos.
-Capítulo IX - BIBLIOGRAFIA
-http://www.policiamilitar.sp.gov.br/inicial.asp, dicas de segurança.
-GODOY, José E. Técnicas de Segurança em Condomínios, São Paulo, 2ª Edição,
-SENAC, 2009.
-Monografia Segurança em Condomínios Residenciais Verticais de José Elias de
-Godoy na conclusão do curso de Gestão de Segurança Empresarial pela Universidade
-Anhembi-Morumbi, São Paulo, 2001.
-Apostila Segurança Predial - Treinamento de Segurança para Condomínios,
-SECOVI-RJ e SSP-RJ, 2° edição, 2001. 
-Manual Guia Prático de Segurança Condominial de José Elias de Godoy e Lúcio
-Mamede de Souza Filho, São Paulo, 2002. 
-    </section>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.fontBranca{
+strong{
     color: rgb(255, 255, 255);
 }
 
@@ -106,77 +106,59 @@ header button.nova:hover{
     color: rgb(180, 179, 179);
 }
 
-section#novaVisita{
+section{
+    grid-area: section;
     position: relative;
-    display: none;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    margin: 2% auto;
+    color: rgb(180, 179, 179);
 }
 
-section table{
-    position: relative;
+section h1{
+    width: 100%;
+    height: auto;
+    margin: 3% auto;
+    text-align: left;
+    font-size: 30pt;
+}
+
+section h2{
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+    text-align: left;
+    font-size: 20pt;
+}
+
+section h3{
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+    text-align: left;
+    font-size: 17pt;
+}
+
+section h4{
+    width: 100%;
+    height: auto;
+    margin: 5% auto 1% auto;
+    text-align: left;
+    font-size: 15pt;
+}
+
+section p{
+    width: 90%;
+    height: auto;
+    margin: 1% auto;
+    text-align: justify;
+    font-size: 13pt;
+}
+
+section li{
     width: 90%;
     height: auto;
     margin: auto;
-    text-align: center;
-}
-
-section table tr{
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    font-weight: 500;
-    background-color: rgb(40, 40, 40);
-}
-
-section table tr td{
-    position: relative;
-    height: auto;
-    padding: 5px;
+    text-align: justify;
     font-size: 13pt;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-}
-
-section table select{
-    padding: 2px;
-    font-size: 13pt;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(35, 35, 35);
-}
-
-section table input{
-    padding: 2px;
-    font-size: 13pt;
-    color: rgb(255, 255, 255);
-    background-color: rgb(35, 35, 35);
-}
-
-section div.button{
-    position: relative;
-    width: 85%;
-    height: auto;
-    margin: 10px auto;
-    text-align: left;
-}
-
-section div.button button{
-    width: 120px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px 10px 15px 0;
-    font: normal 13pt Arial;
-    border: none;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: rgb(61, 61, 61);
-}
-
-section div.button button:hover{
-    background-color: rgb(78, 78, 78);
 }

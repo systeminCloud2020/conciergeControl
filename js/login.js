@@ -2,7 +2,7 @@ function logando(){
     var nome = window.document.getElementById('nome').value;
     var senha = window.document.getElementById('senha').value;
 
-    var login = 'ConciergeControl';
+    var login = 'conciergecontrol';
     var password = '12345678';
 
     if(nome == "" || senha == ""){
@@ -10,8 +10,8 @@ function logando(){
     }
 
     else if(nome == login && senha == password){
-        window.open('home.html');
         window.close('index.html');
+        window.open('home.html');        
     }
        
     else{

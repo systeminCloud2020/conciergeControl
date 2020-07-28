@@ -84,14 +84,21 @@ header button.nova:hover{
     border: 3px solid rgb(70, 70, 70);
 }
 
-#usuario h1{
+#usuario div#nomeFuncao{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+#usuario div#nomeFuncao h1{
     font-size: 18pt;
     text-align: left;
     color: rgb(180, 179, 179);
 }
 
-#usuario h1 p{
+#usuario div#nomeFuncao p{
     font-size: 10pt;
+    text-align: left;
     color: rgb(180, 179, 179);
 }
 
@@ -106,7 +113,7 @@ header button.nova:hover{
     color: rgb(180, 179, 179);
 }
 
-section#novaVisita{
+section#novaEncomenda{
     position: relative;
     display: none;
     width: 100%;
@@ -122,6 +129,16 @@ section table{
     height: auto;
     margin: auto;
     text-align: center;
+}
+
+section table th{
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 40, 40);
 }
 
 section table tr{
@@ -153,6 +170,7 @@ section table select{
 section table input{
     padding: 2px;
     font-size: 13pt;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     background-color: rgb(35, 35, 35);
 }
@@ -179,4 +197,32 @@ section div.button button{
 
 section div.button button:hover{
     background-color: rgb(78, 78, 78);
+}
+
+section#log{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+section#log table#tblCadastro{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+section#log table#tblCadastro input{
+    position: relative;
+    width: 180px;
+    height: auto;
+    margin: 0;
+    background-color: rgb(86, 110, 61);
+}
+
+section#log table#tblCadastro button{
+    display: none;
 }

@@ -29,16 +29,20 @@
         <button class="nova" type="button" onclick="openNovaVisita()">Nova Visita</button>
         </div>
 
-        
+        <div id="usuario">
+            <img src="img/michel_souza.png" alt="">
+            <h1 id="agente">Michel Souza Santana <p>Agente de Portaria</p></h1>
+            <p id="data">24/07/2020</p> 
+            <p id="time">08:45</p>
+        </div>        
 
     </header>
 
     <section id="novaVisita">
-
+        <form action="">
     <table >
 
         <tr>
-            <td>Data</td>
             <td>Bloco</td>
             <td>Apartamento</td>
             <td>Visitante</td>
@@ -48,11 +52,6 @@
           </tr>
 
         <tr>
-
-            <td>
-                <div id="data"></div>
-                <div id="time">time</div>
-            </td>
 
             <td>
                 <select name="bloco" id="bloco">
@@ -135,10 +134,10 @@
     </table>
 
     <div class="button">
-    <button type="button" onclick="adicionaLinha('tbl')">Adicionar</button>
+    <button type="reset" onclick="adicionaLinha('tbl')">Adicionar</button>
     <button type="button" onclick="closedNovaVisita()">Fechar</button>
 </div>
-
+</form>
 </section>
 
 <section>

@@ -1,140 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concierge Control</title>
+    <title>System | Concierge Control</title>
+
+    <!--Link Icon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <!--Link Css-->
     <link rel="stylesheet" href="css/home.css">
 
-    <!--Link Js-->
+    <!--Link Script's-->
     <script src="js/home.js"></script>
 
-    <!--Link's Externos-->
+    <!--Link Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <section>
 
-        <div id="container">
+<body onload="startTime(), carregaData()">
+    <div id="container">
 
-        <div id="ferramentas">
-            <figure>
+        <header id="header">
+
+            <div id="logo">
+                <figure>
+                    <img src="img/logoConciergeControl.png" alt="Logo Concierge Control">
+                </figure>
+
+                <h1>Concierge Control</h1>
+            </div>
+
+            <div id="menuPrincipal">
+                <button type="button" title="Home"><img src="img/home.png" alt="Home"></button>
+                <button type="button" title="Regimento" onclick="openRegimento()"><img src="img/icon_pg_regimento.png" alt="Regimento"></button>
+                <button type="button" title="Manual Portaria" onclick="openManual()"><img src="img/icon_pg_manual.png" alt="Manual Portaria"></button>
+                <button type="button" title="Ocorrências" onclick="openOcorrencias()"><img src="img/icon_pg_ocorrencias.png" alt="Ocorrências"></button>
+                <button type="button" title="Visitas" onclick="openVisitas()"><img src="img/visitas.svg" alt="Visitas"></button>
+                <button type="button" title="Correios" onclick="openCorreios()"><img src="img/correio.svg" alt="Correios"></button>
+                <button type="button" title="Reservas" onclick="openReservas()"><img src="img/reservas.svg" alt="Reservas"></button>
+                <button type="button" title="Apartamentos" onclick="cadastroApartamento()"><img src="img/aps.svg" alt="Apartamentos"></button>
+                <button type="button" title="Veículos" onclick="openVeiculos()"><img src="img/veiculos.svg" alt="Veículos"></button>
+                <button type="button" title="Multas" onclick="function openMultas()"><img src="img/multas.svg" alt="Multas"></button>
+            </div>
+
+            <div id="usuario">
                 <img src="img/michel_souza.png" alt="">
-                <figcaption>
-                    <p id="nomeAgente">Michel Souza Santana</p>
-                    <p id="funcaoAgente">Agente de Portaria</p>
-                </figcaption>
-            </figure>
+                <h1 id="agente">Michel Souza Santana <p>Agente de Portaria</p></h1>
+                <p id="data">24/07/2020</p> 
+                <p id="hora">08:45</p>
+            </div>
+
+        </header>
+
+        <section id="section">
+
+            <div id="menuLateral">
+                <button> <img src="img/portariaMenu.png" alt=""><p>Portaria</p></button>
+                <button><img src="img/cadastroMenu.png" alt=""><p>Cadastro</p></button>
+                <button><img src="img/estoqueMenu.png" alt=""><p>Estoque</p></button>
+                <button><img src="img/relatorioMenu.png" alt=""><p>Relatorios</p></button>
+                <button><img src="img/sobreMenu.png" alt=""><p>Sobre</p></button>
+                <button><img src="img/exitMenu.png" alt=""><p>SAIR</p></button>
+            </div>
             
-            <button>
-                <img class="um" src="img/portariaMenu.png" alt="">
-                <img class="dois" src="img/portariaMenu2.png" alt="">
-                <p>Portaria</p>
-            </button>
-            
-            <button>
-                <img class="um" src="img/cadastroMenu.png" alt="">
-                <img class="dois" src="img/cadastroMenu2.png" alt="">
-                <p>Cadastro</p>
-            </button>
+            <div id="ultimasOcorrencias">
 
-            <button>
-                <img class="um" src="img/estoqueMenu.png" alt="">
-                <img class="dois" src="img/estoqueMenu2.png" alt="">
-                <p>Estoque</p>
-            </button>
+            </div>
 
-            <button>
-                <img class="um" src="img/relatorioMenu.png" alt="">
-                <img class="dois" src="img/relatorioMenu2.png" alt="">
-                <p>Relatórios</p>
-            </button>
-
-            <button>
-                <img class="um" src="img/sobreMenu.png" alt="">
-                <img class="dois" src="img/sobreMenu2.png" alt="">
-                <p>Sobre</p>
-            </button>
-
-            <button type="button" onclick="sair()">
-                <img class="um" src="img/exitMenu.png" alt="">
-                <img class="dois" src="img/exitMenu2.png" alt="">
-                <p>SAIR</p>
-            </button>
-
-        </div>
-
-        <div id="tela">
-
-            <img id="logo" src="img/logoCC.png" alt="">
-                <h1 id="titulo">Concierge control</h1>
-
-                <div id="menu">     
-
-            <button class="btn1" title="Home">
-                <img src="img/home.png" alt="Home">
-                    <p></p>
-            </button>
-
-            <button class="btn2" title="Regimento" onclick="openRegimento()">
-                <img src="img/icon_pg_regimento.png" alt="Regimento">
-                    <p></p>
-            </button>
-
-            <button class="btn3" title="Manual" onclick="openManual()">
-                <img src="img/icon_pg_manual.png" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn4" title="Ocorrências" onclick="openOcorrencias()">
-                <img src="img/icon_pg_ocorrencias.png" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn5" title="Visitas" onclick="openVisitas()">
-                <img src="img/visitas.svg" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn6" title="Correios" onclick="openCorreios()">
-                <img src="img/correio.svg" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn7" title="Reservas" onclick="openReservas()">
-                <img src="img/reservas.svg" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn8" title="Apartamentos" onclick="cadastroApartamento()">
-                <img src="img/aps.svg" alt="">
-                    <p></p>
-            </button>
-
-            <button class="btn9" title="Veículos" onclick="openVeiculos()">
-                <img src="img/veiculos.svg" alt="">
-                    <p></p>
-            </button>
-            
-            <button class="btn10" title="Multas" onclick="openMultas()">
-                <img src="img/multas.svg" alt="">
-                    <p></p>
-            </button>
-        </div>
-
-        
+        </section>
 
     </div>
-        <div id="informativo">
-            <iframe src="ultimasOcorrencias.html" frameborder="0"></iframe>
-        </div>
-
-    </div>
-
-    <div id="mostrar"></div>
-
-    </section>
 </body>
+
 </html>

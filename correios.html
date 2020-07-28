@@ -25,17 +25,22 @@
         </div>
 
         <div>
-        <button type="button" onclick="window.close('ocorrencias.html')">Fechar</button>
+        <button type="button" onclick="window.close()">Fechar</button>
         <button type="button" onclick="">Relatorio</button>
         <button class="nova" type="button" onclick="openNovaEncomenda()">Nova Encomenda</button>
         </div>
 
-       
+        <div id="usuario">
+            <img src="img/michel_souza.png" alt="">
+            <h1 id="agente">Michel Souza Santana <p>Agente de Portaria</p></h1>
+            <p id="data">24/07/2020</p> 
+            <p id="hora">08:45</p>
+        </div>
 
     </header>
 
     <section id="novaEncomenda">
-
+        <form action="">
     <table>
 
         <tr>
@@ -127,10 +132,10 @@
     </table>
 
     <div class="button">
-        <button id="btnAdicionar">Adicionar</button>
+        <button type="reset" id="btnAdicionar">Adicionar</button>
         <button type="button" onclick="closedEncomenda()">Fechar</button>
 </div>
-
+</form>
 </section>
 
 <!--

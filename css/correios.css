@@ -9,7 +9,7 @@ body{
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding-bottom: 5%;
     background-color: rgb(30, 30, 30);
 }
 
@@ -64,6 +64,46 @@ header button.nova{
 
 header button.nova:hover{
     background-color: rgb(212, 97, 2);
+}
+
+#usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin: 2% auto 0 auto;
+    padding: 1%;
+}
+
+#usuario img{
+    width: 6%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    border: 3px solid rgb(70, 70, 70);
+}
+
+#usuario h1{
+    font-size: 18pt;
+    text-align: left;
+    color: rgb(180, 179, 179);
+}
+
+#usuario h1 p{
+    font-size: 10pt;
+    color: rgb(180, 179, 179);
+}
+
+#usuario p#hora{
+    width: 150px;
+}
+
+#usuario p{
+    margin: auto;
+    font-size: 18pt;
+    font-weight: 600;
+    color: rgb(180, 179, 179);
 }
 
 section#novaEncomenda{

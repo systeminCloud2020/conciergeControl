@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="css/reservas.css">
+
+    <!--Link Script-->
+    <script src="js/reservas.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/logReservas.js"></script>
+
+</head>
+
+<body onload="carregaData(), startTime()">
+
+    <header>
+
+        <div>
+            <img src="img/reservas.svg" alt="logo Concierge Control">
+            <h1>Concierge Control - <strong class="fontBranca">Reservas</strong></h1>
+        </div>
+
+        <div>
+            <button type="button" onclick="window.close()">Fechar</button>
+            <button type="button" onclick="">Histórico</button>
+            <button class="nova" type="button" onclick="openNovaEncomenda()">Nova Reserva</button>
+        </div>
+
+        <div id="usuario">
+            <img src="img/michel_souza.png" alt="">
+            <div id="nomeFuncao">
+            <h1 id="agente">Michel Souza Santana</h1>
+            <p>Agente de Portaria</p>
+            </div>
+            <p id="data">24/07/2020</p>
+            <p id="time">08:45</p>
+        </div>
+
+    </header>
+
+    <section id="novaEncomenda">
+
+        <form action="">
+
+        <table>
+
+            <tr>
+                <td>Bloco</td>
+                <td>Apartamento</td>
+                <td>Responsável</td>
+                <td>Área Reservada</td>
+                <td>Data Prevista</td>
+                <td>...</td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <select name="bloco" id="bloco">
+                        <option value="BL-01">Bl-01</option>
+                        <option value="Bl-02">Bl-02</option>
+                        <option value="Bl-03">Bl-03</option>
+                        <option value="Bl-04">Bl-04</option>
+                        <option value="Bl-05">Bl-05</option>
+                        <option value="Bl-06">Bl-06</option>
+                        <option value="Bl-07">Bl-07</option>
+                        <option value="Bl-08">Bl-08</option>
+                        <option value="Bl-09">Bl-09</option>
+                        <option value="Bl-10">Bl-10</option>
+                        <option value="Bl-11">Bl-11</option>
+                        <option value="Bl-12">Bl-12</option>
+                        <option value="Bl-13">Bl-13</option>
+                        <option value="Bl-14">Bl-14</option>
+                        <option value="Bl-15">Bl-15</option>
+                        <option value="Bl-16">Bl-16</option>
+                        <option value="Bl-17">Bl-17</option>
+                        <option value="Bl-18">Bl-18</option>
+                        <option value="Bl-19">Bl-19</option>
+                        <option value="Bl-20">Bl-20</option>
+                        <option value="Bl-21">Bl-21</option>
+                        <option value="Bl-22">Bl-22</option>
+                    </select>
+                </td>
+
+                <td>
+                    <select name="apartamento" id="apartamento">
+                        <option value="AP-01">001</option>
+                        <option value="AP-02">002</option>
+                        <option value="AP-03">003</option>
+                        <option value="AP-04">004</option>
+
+                        <option value="AP-101">101</option>
+                        <option value="AP-102">102</option>
+                        <option value="AP-103">103</option>
+                        <option value="AP-104">104</option>
+
+                        <option value="AP-201">201</option>
+                        <option value="AP-202">202</option>
+                        <option value="AP-203">203</option>
+                        <option value="AP-204">204</option>
+
+                        <option value="AP-301">301</option>
+                        <option value="AP-302">302</option>
+                        <option value="AP-303">303</option>
+                        <option value="AP-304">304</option>
+                    </select>
+                </td>
+
+                <td>
+                    <input type="text" name="responsavel" id="responsavel">
+                </td>
+
+                <td>
+                    <select name="area" id="area">
+                        <option value="Salão de Festas">Salão de Festas</option>
+                        <option value="Churrasqueira 1">Chrrasqueira 1</option>
+                    </select>
+                </td>
+
+                <td>
+                    <input type="date" name="dataPrevista" id="dataPrevista">
+                    <input type="time" name="horaPrevista" id="horaPrevista">
+                </td>
+
+                <td>
+                    <div id="dataEntrega"></div>
+                </td>
+
+            </tr>
+        </table>
+
+        <div class="button">
+            <button type="reset" id="btnAdicionar">Adicionar</button>
+            <button type="button" onclick="closedEncomenda()">Fechar</button>
+        </div>
+    </form>
+    </section>
+
+    <!--
+<section>
+    <table id="tbl">
+        <tr>
+            <td>Data</td>
+            <td>Bloco</td>
+            <td>Apartamento</td>
+            <td>Visitante</td>
+            <td>Veículo</td>
+            <td>Situação</td>
+            <td>Remover</td>
+        </tr>
+        </table> 
+</section>
+-->
+    <section id="log">
+
+        <table id="tblCadastro">
+            <thead>
+                <tr>
+                    <th>Data da Solicitação</th>
+                    <th>Bloco</th>
+                    <th>Apartamento</th>
+                    <th>Responsável</th>
+                    <td>Área Reservada</td>
+                    <th>Data Prevista</th>
+                    <th>Data Devolução</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>
+
+<!--#############################################################################-->

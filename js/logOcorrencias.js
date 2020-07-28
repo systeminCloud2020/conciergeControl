@@ -21,6 +21,9 @@
             var divIcone = window.document.getElementById('divIcone').innerHTML;
             var descricao = window.document.getElementById('descricao').value;
             var resolucao = window.document.getElementById('resolucao').value;
+            var image1 = window.document.getElementById('image1').innerHTML
+            var image2 = window.document.getElementById('image2').innerHTML
+            var image3 = window.document.getElementById('image3').innerHTML
            //var dataEntrega = window.document.getElementById('dataEntrega').value;
             //entrega = '<div id="novaData"></div>';
     
@@ -40,6 +43,11 @@
                 '</tr>' +
                 '<tr>' +
                 '<td colspan="3">' + resolucao + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td class="image">' + image1 + '</td>' +
+                '<td class="image">' + image2 + '</td>' +
+                '<td class="image">' + image3 + '</td>' +
                 '</tr>' +
                 /*
                 '<tr>' +
@@ -105,7 +113,7 @@
             //$(".btnEditar").bind("click", Editar);
             $(".btnExcluir").bind("click", Excluir);
         };
-    
+     */
         function Excluir() {
             var par = $(this).parent().parent(); //tr
             par.remove();
@@ -114,6 +122,6 @@
         $(".btnEditar").bind("click", Editar);
         $(".btnExcluir").bind("click", Excluir);
         $("#btnAdicionar").bind("click", Adicionar);
-        */
+       
 
     

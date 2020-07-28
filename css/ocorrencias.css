@@ -21,7 +21,7 @@ body {
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding-bottom: 5%;
     background-color: rgb(30, 30, 30);
 }
 
@@ -78,6 +78,46 @@ header button.nova:hover{
     background-color: rgb(212, 97, 2);
 }
 
+#usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin: 2% auto 0 auto;
+    padding: 1%;
+}
+
+#usuario img{
+    width: 6%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+    border: 3px solid rgb(70, 70, 70);
+}
+
+#usuario h1{
+    font-size: 18pt;
+    text-align: left;
+    color: rgb(180, 179, 179);
+}
+
+#usuario h1 p{
+    font-size: 10pt;
+    color: rgb(180, 179, 179);
+}
+
+#usuario p#hora{
+    width: 150px;
+}
+
+#usuario p{
+    margin: auto;
+    font-size: 18pt;
+    font-weight: 600;
+    color: rgb(180, 179, 179);
+}
+
 section {
     position: relative;
     width: 100%;
@@ -90,7 +130,7 @@ section {
 section form#novaOcorrencia{
     position: relative;
     display: none;
-    width: 70%;
+    width: 90%;
     grid-template-areas:
     'idOcorrencia idOcorrencia' 
     'dataHora nomeAgente'
@@ -312,7 +352,7 @@ div.imagens input{
 
 /*###############################################*/
 section#log{
-    width: 80%;
+    width: 90%;
     margin: 5% auto;
     color: rgb(255, 255, 255);
     
@@ -367,4 +407,22 @@ section#log table td.nada{
     border: none;
 }
 
+section#log table td.image{
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+section#log table td.image img{ 
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+section#log table td.image input{
+    display: none;
+}
 

@@ -170,6 +170,17 @@ function closedNovaOcorrencia() {
     divAparece.style.display = "none";
 }
 
+//Função atualisa ID
+
+
+
+
+
+
+
+
+
+
 function adcionar() {
 
 
